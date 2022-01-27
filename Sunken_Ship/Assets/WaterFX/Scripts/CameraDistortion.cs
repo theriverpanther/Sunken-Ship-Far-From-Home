@@ -7,17 +7,18 @@ public class CameraDistortion : MonoBehaviour
 {
     [SerializeField]
     PostProcessProfile profile;
+    LensDistortion distortion;
     
     public float speed;
     public bool invert;
     
-    [Range (-1.0f,0.0f)]
+    [Range (-5.0f,0.0f)]
     public float minX;
-    [Range (0.0f, 1.0f)]
+    [Range (0.0f, 5.0f)]
     public float maxX;
-    [Range (-1.0f,0.0f)]
+    [Range (-5.0f,0.0f)]
     public float minY;
-    [Range (0.0f, 1.0f)]
+    [Range (0.0f, 5.0f)]
     public float maxY;
 
     private float xRange;
@@ -41,15 +42,15 @@ public class CameraDistortion : MonoBehaviour
         // Move clockwise
         if(invert)
         {
-            x = Mathf.Clamp(Mathf.Cos(speed * timeRan), minX, maxX) * xRange;
-            y = Mathf.Clamp(Mathf.Sin(speed * timeRan), minY, maxY) * yRange;
+            x = Mathf.Cos(speed * timeRan)* xRange;
+            y = Mathf.Sin(speed * timeRan)* yRange;
             
         }
         // Move counter-clockwise
         else
         {
-            x = Mathf.Clamp(Mathf.Sin(speed * timeRan), minX, maxX) * xRange;
-            y = Mathf.Clamp(Mathf.Cos(speed * timeRan), minY, maxY) * yRange;
+            x = Mathf.Sin(speed * timeRan) * xRange;
+            y = Mathf.Cos(speed * timeRan)* yRange;
         }
         // Adjust the filter values
         distortion.centerX.value = x;

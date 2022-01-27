@@ -865,8 +865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profile: {fileID: 11400000, guid: 0c86265d51ac0c249941e53374f120b2, type: 2}
-  distortion: {fileID: 0}
-  speed: 4.5
+  speed: 2.5
   invert: 0
   minX: -1
   maxX: 1
