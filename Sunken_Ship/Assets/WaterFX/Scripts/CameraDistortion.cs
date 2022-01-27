@@ -7,8 +7,6 @@ public class CameraDistortion : MonoBehaviour
 {
     [SerializeField]
     PostProcessProfile profile;
-    [SerializeField]
-    LensDistortion distortion;
     
     public float speed;
     public bool invert;
