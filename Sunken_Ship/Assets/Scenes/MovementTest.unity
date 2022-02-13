@@ -537,7 +537,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocity: 0
+  angularVelocity: 0
   test: {x: 0, y: 0, z: 0}
+  energy: 1
 --- !u!1 &750778491
 GameObject:
   m_ObjectHideFlags: 0
