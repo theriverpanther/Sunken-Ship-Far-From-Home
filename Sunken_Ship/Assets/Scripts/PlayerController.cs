@@ -6,61 +6,112 @@ public class PlayerController : MonoBehaviour
 {
     //Fields
     Rigidbody rb;
-    [SerializeField] float forceVector;
+    //[SerializeField] float forceVector;
+    [SerializeField] float velocity = 0;
+    [SerializeField] float angularVelocity = 0;
+    [SerializeField] Vector3 test;
+    [SerializeField] float energy = 1;
+    EnergyBar barScript;
+
+    const float acceleration = 0.03f;
+    const float angularAcc = 0.003f;
+    const float maxVelocity = 6.0f;
+    const float maxAngularVelocity = 1.0f;
+    const float jumpBoost = 1.5f;
+    const float jumpDrain = 0.002f;
+    const float jumpRefill = 0.0005f;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
-        rb.maxAngularVelocity = 1.5f;
+        //rb.maxAngularVerblocity = 1.5f;
         rb.maxDepenetrationVelocity = 1;
+        barScript = FindObjectOfType<EnergyBar>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        forceVector = Mathf.Sqrt(Mathf.Pow(rb.velocity.x, 2) + Mathf.Pow(rb.velocity.x, 2)); //Distance Formula
+        //Movement
+        rb.velocity = new Vector3(transform.forward.x * velocity, rb.velocity.y, transform.forward.z * velocity);
+        rb.angularVelocity = new Vector3(rb.angularVelocity.x, angularVelocity, rb.angularVelocity.z);
 
-        //Rotate
+        //Rotate submarine with A and D
         if (Input.GetKey(KeyCode.A))
         {
-            rb.AddTorque(new Vector3(0, -0.15f, 0));
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            rb.AddTorque(new Vector3(0, 0.15f, 0));
-        }
-
-        //Slow Angular Velocity
-        if(!Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A))
-        {
-            rb.AddTorque(new Vector3(0, rb.angularVelocity.y * -0.1f, 0));
-
-            if(Mathf.Abs(rb.angularVelocity.y) < 0.5)
+            if (angularVelocity > -maxAngularVelocity)
             {
-                rb.angularVelocity = new Vector3(0, 0, 0);
+                angularVelocity -= angularAcc;
+                //rb.AddTorque(new Vector3(0, -1.0f, 0));
+                //transform.Rotate(0, -0.15f, 0);
+            }
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            if (angularVelocity < maxAngularVelocity)
+            {
+                angularVelocity += angularAcc;
+                //rb.AddTorque(new Vector3(0, 100.0f, 0));
+                //transform.Rotate(0, 0.15f, 0);
+            }
+        }
+        else //Slow Down if not pressed
+        {
+            if (angularVelocity > 0)
+            {
+                angularVelocity -= (angularAcc / 4);
+            }
+            if (angularVelocity < 0)
+            {
+                angularVelocity += (angularAcc / 4);
             }
         }
 
         //Move Forward
         if (Input.GetKey(KeyCode.W))
         {
-            rb.AddForce(transform.forward * 2);
-            if(rb.velocity.magnitude > 5)
+            if(velocity < maxVelocity)
             {
-                rb.velocity = rb.velocity.normalized * 5;
+                velocity += acceleration;
             }
         }
-        else
+        else if (Input.GetKey(KeyCode.S))
         {
-            if(Mathf.Abs(rb.velocity.x) > 0)
+            if (velocity > -maxVelocity)
             {
-                rb.AddForce(new Vector3(rb.velocity.x * -0.3f, 0, 0));
+                velocity -= acceleration;
             }
-            if (Mathf.Abs(rb.velocity.z) > 0)
+        }
+        else //Slow down if forward or back button not pressed
+        {
+            if(velocity > 0)
             {
-                rb.AddForce(new Vector3(0, 0, rb.velocity.z * -0.3f));
+                velocity -= (acceleration / 4);
             }
+            if (velocity < 0)
+            {
+                velocity += (acceleration / 4);
+            }
+        }
+
+        //Jump
+        if(Input.GetKey(KeyCode.Space) && energy > 0)
+        {
+            energy -= jumpDrain;
+            rb.AddForce(0, jumpBoost, 0);
+
+            //Call Bar Script
+            barScript.ChangeBar(energy);
+        }
+
+        //Refill Jump Bar
+        if(Mathf.Abs(rb.velocity.y) < 0.1f && energy < 1.0f)
+        {
+            energy += jumpRefill;
+
+            //Call Bar Script
+            barScript.ChangeBar(energy);
         }
     }
 }
