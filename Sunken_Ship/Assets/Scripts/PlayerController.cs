@@ -20,6 +20,9 @@ public class PlayerController : MonoBehaviour
     const float jumpBoost = 1.5f;
     const float jumpDrain = 0.002f;
     const float jumpRefill = 0.0005f;
+    
+    
+    public Transform originalRotationValue;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +31,9 @@ public class PlayerController : MonoBehaviour
         //rb.maxAngularVerblocity = 1.5f;
         rb.maxDepenetrationVelocity = 1;
         barScript = FindObjectOfType<EnergyBar>();
+       
+        
+        originalRotationValue = gameObject.transform;
     }
 
     // Update is called once per frame
@@ -112,6 +118,12 @@ public class PlayerController : MonoBehaviour
 
             //Call Bar Script
             barScript.ChangeBar(energy);
+        }
+
+        if (Input.GetKey(KeyCode.R))
+        {
+            gameObject.transform.Rotate(0, 0, 1);
+
         }
     }
 }

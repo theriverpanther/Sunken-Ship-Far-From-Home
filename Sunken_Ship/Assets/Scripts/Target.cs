@@ -7,7 +7,7 @@ public class Target : MonoBehaviour
     // Start is called before the first frame update
 
     public float health = 50f;
-
+    public enemyspawner numcounter;
 
     public void TakeDamage(float amount)
     {
@@ -21,6 +21,8 @@ public class Target : MonoBehaviour
     void Die()
     {
         Destroy(gameObject);
+        numcounter.numActive--;
+        numcounter.canInstantiate = true;
     }
 
 }
