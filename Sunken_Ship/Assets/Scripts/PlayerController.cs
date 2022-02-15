@@ -125,5 +125,15 @@ public class PlayerController : MonoBehaviour
             gameObject.transform.Rotate(0, 0, 1);
 
         }
+
+        if(Input.GetKey(KeyCode.Z))
+        {
+            Application.LoadLevel(Application.loadedLevel);
+        }
+
+        if(Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 }
