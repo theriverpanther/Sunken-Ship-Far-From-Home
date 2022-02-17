@@ -30,8 +30,8 @@ public class enemyspawner : MonoBehaviour
 
     private void SetRanges()
     {
-        Min = new Vector3(0, 45f, 0);
-        Max = new Vector3(100, 45f, 150);
+        Min = new Vector3(16.6f, 45f, 21.3f);
+        Max = new Vector3(81.8f, 45f, 193.1f);
     }
     private void InstantiateTraps()
     {
