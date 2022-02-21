@@ -311,63 +311,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &181053703
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 895830168}
-    m_Modifications:
-    - target: {fileID: 4526301275357385951, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
-      propertyPath: m_Name
-      value: Nordic Beach Rocks_vepkcelqx (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8958663062706438152, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8958663062706438152, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 67.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 8958663062706438152, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 42.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 8958663062706438152, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 127.13
-      objectReference: {fileID: 0}
-    - target: {fileID: 8958663062706438152, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.05904664
-      objectReference: {fileID: 0}
-    - target: {fileID: 8958663062706438152, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.41923958
-      objectReference: {fileID: 0}
-    - target: {fileID: 8958663062706438152, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.14798819
-      objectReference: {fileID: 0}
-    - target: {fileID: 8958663062706438152, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.89378476
-      objectReference: {fileID: 0}
-    - target: {fileID: 8958663062706438152, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -18.303
-      objectReference: {fileID: 0}
-    - target: {fileID: 8958663062706438152, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 50.439
-      objectReference: {fileID: 0}
-    - target: {fileID: 8958663062706438152, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 178.881
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
 --- !u!1001 &269193949
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -460,29 +403,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6839832, y: 1, z: 0.7776036}
   m_Center: {x: -0.0032567978, y: 0, z: -0.0069722654}
---- !u!1 &282127387 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6018962847453335167, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-  m_PrefabInstance: {fileID: 1782127639}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &282127388 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-  m_PrefabInstance: {fileID: 1782127639}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &282127389
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 282127387}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 15.352592, y: 8.942326, z: 9.118629}
-  m_Center: {x: 0.5074196, y: 3.5675716, z: 2.0296514}
 --- !u!1001 &298314734
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1012,11 +932,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 762227d8f833f71479f8a9aa5159d4ad, type: 3}
---- !u!4 &415963788 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8958663062706438152, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
-  m_PrefabInstance: {fileID: 181053703}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &472159099
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1906,29 +1821,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6839832, y: 1, z: 0.7776036}
   m_Center: {x: -0.0032567978, y: 0, z: -0.0069722654}
---- !u!1 &808452877 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6018962847453335167, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-  m_PrefabInstance: {fileID: 1858290241}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &808452879 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-  m_PrefabInstance: {fileID: 1858290241}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &808452880
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 808452877}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 15.352592, y: 10.42342, z: 9.118629}
-  m_Center: {x: 0.5074196, y: 2.8270245, z: 2.0296516}
 --- !u!1001 &828214748
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2516,99 +2408,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6839832, y: 1, z: 0.7776036}
   m_Center: {x: -0.0032567978, y: 0, z: -0.0069722654}
---- !u!1 &895830167
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 895830168}
-  m_Layer: 0
-  m_Name: EnvironmentObjectsRocks
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &895830168
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 895830167}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1155372169}
-  - {fileID: 415963788}
-  - {fileID: 808452879}
-  - {fileID: 282127388}
-  - {fileID: 1049283424}
-  - {fileID: 1067428971}
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &928817869
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 895830168}
-    m_Modifications:
-    - target: {fileID: 4526301275357385951, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
-      propertyPath: m_Name
-      value: Nordic Beach Rocks_vepkcelqx
-      objectReference: {fileID: 0}
-    - target: {fileID: 8958663062706438152, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8958663062706438152, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 66.76
-      objectReference: {fileID: 0}
-    - target: {fileID: 8958663062706438152, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 42.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 8958663062706438152, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 127.82
-      objectReference: {fileID: 0}
-    - target: {fileID: 8958663062706438152, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8958663062706438152, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8958663062706438152, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8958663062706438152, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8958663062706438152, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8958663062706438152, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8958663062706438152, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
 --- !u!1001 &931974706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3021,52 +2820,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6839832, y: 1, z: 0.7776036}
   m_Center: {x: -0.0032567978, y: 0, z: -0.0069722654}
---- !u!1 &1049283423 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6018962847453335167, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-  m_PrefabInstance: {fileID: 1992288127}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1049283424 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-  m_PrefabInstance: {fileID: 1992288127}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1049283425
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1049283423}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10.815478, y: 8.6412, z: 9.118629}
-  m_Center: {x: -1.7611588, y: 1.9359145, z: 2.0296516}
---- !u!1 &1067428970 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6018962847453335167, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-  m_PrefabInstance: {fileID: 1654508584}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1067428971 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-  m_PrefabInstance: {fileID: 1654508584}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1067428972
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1067428970}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 15.352592, y: 10.42342, z: 9.118629}
-  m_Center: {x: 0.5074196, y: 2.8270245, z: 2.0296516}
 --- !u!1 &1098330200
 GameObject:
   m_ObjectHideFlags: 0
@@ -3295,11 +3048,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6839832, y: 1, z: 0.7776036}
   m_Center: {x: -0.0032567978, y: 0, z: -0.0069722654}
---- !u!4 &1155372169 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8958663062706438152, guid: 107a5e41e0f7e7c40a7db355366f8ed7, type: 3}
-  m_PrefabInstance: {fileID: 928817869}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1172089936
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4852,63 +4600,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6839832, y: 1, z: 0.7776036}
   m_Center: {x: -0.0032567978, y: 0, z: -0.0069722654}
---- !u!1001 &1654508584
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 895830168}
-    m_Modifications:
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 58.62
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 45.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 128.83
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.2422533
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.014034809
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.25597987
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.93573004
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 29.069
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 6.422
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 210.696
-      objectReference: {fileID: 0}
-    - target: {fileID: 6018962847453335167, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_Name
-      value: Huge Nordic Coastal Cliff_ullqbb1ga (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
 --- !u!1 &1674579064
 GameObject:
   m_ObjectHideFlags: 0
@@ -5169,71 +4860,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6839832, y: 1, z: 0.7776036}
   m_Center: {x: -0.0032567978, y: 0, z: -0.0069722654}
---- !u!1001 &1782127639
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 895830168}
-    m_Modifications:
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalScale.z
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 60.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 41.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 126.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.0025715977
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.9999967
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180.295
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6018962847453335167, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_Name
-      value: Huge Nordic Coastal Cliff_ullqbb1ga (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
 --- !u!1001 &1789436787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5451,63 +5077,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.6839832, y: 1, z: 0.7776036}
   m_Center: {x: -0.0032567978, y: 0, z: -0.0069722654}
---- !u!1001 &1858290241
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 895830168}
-    m_Modifications:
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 74.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 42.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 125.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6018962847453335167, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_Name
-      value: Huge Nordic Coastal Cliff_ullqbb1ga
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
 --- !u!1 &1898097270
 GameObject:
   m_ObjectHideFlags: 0
@@ -5920,63 +5489,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 768169845022445246, guid: 762227d8f833f71479f8a9aa5159d4ad, type: 3}
   m_PrefabInstance: {fileID: 1172089936}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1992288127
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 895830168}
-    m_Modifications:
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 74.04
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 46.66
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 127.98
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.2422533
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.014034809
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.25597987
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.93573004
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 29.069
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 6.422
-      objectReference: {fileID: 0}
-    - target: {fileID: 16777669240046348, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 210.696
-      objectReference: {fileID: 0}
-    - target: {fileID: 6018962847453335167, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
-      propertyPath: m_Name
-      value: Huge Nordic Coastal Cliff_ullqbb1ga (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2098e8d4ef1ab4543b298409bdbfe0b3, type: 3}
 --- !u!1 &2017310164 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5714713813857749859, guid: 817e50309258bcf4993991cb4e7578e8, type: 3}
@@ -6221,3 +5733,60 @@ MonoBehaviour:
   maxX: 1
   minY: -1
   maxY: 1
+--- !u!1001 &7357697130829537373
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7357697131725203653, guid: 3cf20f996c52fc243b1d1150195bbfb6, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7357697131725203653, guid: 3cf20f996c52fc243b1d1150195bbfb6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7357697131725203653, guid: 3cf20f996c52fc243b1d1150195bbfb6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7357697131725203653, guid: 3cf20f996c52fc243b1d1150195bbfb6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7357697131725203653, guid: 3cf20f996c52fc243b1d1150195bbfb6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7357697131725203653, guid: 3cf20f996c52fc243b1d1150195bbfb6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7357697131725203653, guid: 3cf20f996c52fc243b1d1150195bbfb6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7357697131725203653, guid: 3cf20f996c52fc243b1d1150195bbfb6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7357697131725203653, guid: 3cf20f996c52fc243b1d1150195bbfb6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7357697131725203653, guid: 3cf20f996c52fc243b1d1150195bbfb6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7357697131725203653, guid: 3cf20f996c52fc243b1d1150195bbfb6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7357697131725203658, guid: 3cf20f996c52fc243b1d1150195bbfb6, type: 3}
+      propertyPath: m_Name
+      value: EnvironmentObjectsRocks
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3cf20f996c52fc243b1d1150195bbfb6, type: 3}
