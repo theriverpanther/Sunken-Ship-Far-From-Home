@@ -52,7 +52,7 @@ MonoBehaviour:
     value: -1
   centerY:
     overrideState: 1
-    value: -1.9872684
+    value: -1
   scale:
     overrideState: 1
     value: 1
