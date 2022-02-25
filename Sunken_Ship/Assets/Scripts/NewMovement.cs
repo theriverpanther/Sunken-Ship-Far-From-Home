@@ -4,23 +4,22 @@ using UnityEngine;
 
 public class NewMovement : MonoBehaviour
 {
-    //Max Speeds
-    public float vForward= 10f;
-    public float vSide = 7.5f;
-    public float vVertical = 20f;
-    //Current Speeds
+    //Movement Speeds
+    [SerializeField] float vForward = 20f;
+    [SerializeField] float vRoll = 20f;
+    //Current Forward Velocity
     private float vForwardActive;
-    private float vSideActive;
-    private float vVerticalActive;
     //Acceleration
     private float aForward = 2.5f;
     private float aSide = 2f;
-    private float aVertical = 2f;
     //Camera Rotate
-    public float lookRotateSpeed = 90f;
+    [SerializeField] float lookRotateSpeed = 90f;
     private Vector2 lookInput;
     private Vector2 screenCenter;
     private Vector2 mouseDistance;
+    //Roll
+    float rollInput;
+
     //Forces
     Rigidbody rb;
 
@@ -42,20 +41,23 @@ public class NewMovement : MonoBehaviour
         mouseDistance.y = (lookInput.y - screenCenter.y) / screenCenter.y;
         mouseDistance = Vector2.ClampMagnitude(mouseDistance, 1f);
 
-        //Rotate
-        transform.Rotate(-mouseDistance.y * lookRotateSpeed * Time.deltaTime, mouseDistance.x * lookRotateSpeed * Time.deltaTime, 0f, Space.Self);
+        //Get Keyboard Input
+        vForwardActive = Mathf.Lerp(vForwardActive, Input.GetAxisRaw("Vertical") * vForward, aForward * Time.deltaTime); //W and S for forward/back
+        rollInput = Mathf.Lerp(rollInput, Input.GetAxisRaw("Horizontal") * -1, aSide * Time.deltaTime); //A and D for rolling left and right
+
+        //Rotation code for each axis, x and y are controlled by the mouse and z is controlled by pressing A and D
+        transform.Rotate(-mouseDistance.y * lookRotateSpeed * Time.deltaTime, mouseDistance.x * lookRotateSpeed * Time.deltaTime, rollInput * vRoll * Time.deltaTime, Space.Self);
+
+        //Calculate Forward Velcoity and move with rigidbody velocity
+        rb.velocity = new Vector3(transform.forward.x * vForwardActive, transform.forward.y * vForwardActive, transform.forward.z * vForwardActive);
 
 
-        vForwardActive = Mathf.Lerp(vForwardActive, Input.GetAxisRaw("Vertical") * vForward, aForward * Time.deltaTime);
-        vSideActive = Mathf.Lerp(vSideActive, Input.GetAxisRaw("Horizontal") * vSide, aSide * Time.deltaTime);
-        vVerticalActive = Mathf.Lerp(vVerticalActive, Input.GetAxisRaw("Hover") * vVertical, aVertical * Time.deltaTime);
-
+        //vSideActive = Mathf.Lerp(vSideActive, Input.GetAxisRaw("Horizontal") * vSide, aSide * Time.deltaTime);
+        //vVerticalActive = Mathf.Lerp(vVerticalActive, Input.GetAxisRaw("Hover") * vVertical, aVertical * Time.deltaTime);
         /*
         transform.position += transform.forward * vForwardActive * Time.deltaTime;
         transform.position += transform.right * vSideActive * Time.deltaTime;
         transform.position += transform.up * vVerticalActive * Time.deltaTime;
         */
-
-        rb.velocity = new Vector3(transform.forward.x * vForwardActive, transform.forward.y * vForwardActive, transform.forward.z * vForwardActive);
     }
 }
