@@ -7,18 +7,23 @@ public class NewMovement : MonoBehaviour
     //Movement Speeds
     [SerializeField] float vForward = 20f;
     [SerializeField] float vRoll = 20f;
-    //Current Forward Velocity
-    private float vForwardActive;
+    [SerializeField] float lookRotateSpeed = 50f;
+
     //Acceleration
-    private float aForward = 2.5f;
-    private float aSide = 2f;
+    private float aForward = 0.5f;
+    private float aSide = 0.5f;
+    private float aMouse = 0.8f;
+
+    //Current Velocity
+    [SerializeField] private float vForwardCurrent;
+    [SerializeField] private float vRollCurrent;
+    [SerializeField] private float vMouseCurrentx;
+    [SerializeField] private float vMouseCurrenty;
+
     //Camera Rotate
-    [SerializeField] float lookRotateSpeed = 90f;
     private Vector2 lookInput;
     private Vector2 screenCenter;
     private Vector2 mouseDistance;
-    //Roll
-    float rollInput;
 
     //Forces
     Rigidbody rb;
@@ -37,27 +42,30 @@ public class NewMovement : MonoBehaviour
         //Get Mouse Location on Screen
         lookInput.x = Input.mousePosition.x;
         lookInput.y = Input.mousePosition.y;
-        mouseDistance.x = (lookInput.x - screenCenter.x) / screenCenter.y;
-        mouseDistance.y = (lookInput.y - screenCenter.y) / screenCenter.y;
+        mouseDistance.x = Mathf.Pow((lookInput.x - screenCenter.x) / screenCenter.y, 3);
+        mouseDistance.y = Mathf.Pow((lookInput.y - screenCenter.y) / screenCenter.y, 3);
         mouseDistance = Vector2.ClampMagnitude(mouseDistance, 1f);
 
-        //Get Keyboard Input
-        vForwardActive = Mathf.Lerp(vForwardActive, Input.GetAxisRaw("Vertical") * vForward, aForward * Time.deltaTime); //W and S for forward/back
-        rollInput = Mathf.Lerp(rollInput, Input.GetAxisRaw("Horizontal") * -1, aSide * Time.deltaTime); //A and D for rolling left and right
+        //Calculate Linear Interpolation for Input
+        vForwardCurrent = Mathf.Lerp(vForwardCurrent, Input.GetAxisRaw("Vertical") * vForward, aForward * Time.deltaTime); //W and S for forward/back
+        vRollCurrent = Mathf.Lerp(vRollCurrent, Input.GetAxisRaw("Horizontal") * -1, aSide * Time.deltaTime); //A and D for rolling left and right
+        vMouseCurrentx = Mathf.Lerp(vMouseCurrentx, mouseDistance.x, aMouse * Time.deltaTime);
+        vMouseCurrenty = Mathf.Lerp(vMouseCurrenty, mouseDistance.y, aMouse * Time.deltaTime);
+
 
         //Rotation code for each axis, x and y are controlled by the mouse and z is controlled by pressing A and D
-        transform.Rotate(-mouseDistance.y * lookRotateSpeed * Time.deltaTime, mouseDistance.x * lookRotateSpeed * Time.deltaTime, rollInput * vRoll * Time.deltaTime, Space.Self);
+        transform.Rotate(-vMouseCurrenty * lookRotateSpeed * Time.deltaTime, vMouseCurrentx * lookRotateSpeed * Time.deltaTime, vRollCurrent * vRoll * Time.deltaTime, Space.Self);
 
         //Calculate Forward Velcoity and move with rigidbody velocity
-        rb.velocity = new Vector3(transform.forward.x * vForwardActive, transform.forward.y * vForwardActive, transform.forward.z * vForwardActive);
+        rb.velocity = new Vector3(transform.forward.x * vForwardCurrent, transform.forward.y * vForwardCurrent, transform.forward.z * vForwardCurrent);
 
 
-        //vSideActive = Mathf.Lerp(vSideActive, Input.GetAxisRaw("Horizontal") * vSide, aSide * Time.deltaTime);
-        //vVerticalActive = Mathf.Lerp(vVerticalActive, Input.GetAxisRaw("Hover") * vVertical, aVertical * Time.deltaTime);
+        //vSideCurrent = Mathf.Lerp(vSideCurrent, Input.GetAxisRaw("Horizontal") * vSide, aSide * Time.deltaTime);
+        //vVerticalCurrent = Mathf.Lerp(vVerticalCurrent, Input.GetAxisRaw("Hover") * vVertical, aVertical * Time.deltaTime);
         /*
-        transform.position += transform.forward * vForwardActive * Time.deltaTime;
-        transform.position += transform.right * vSideActive * Time.deltaTime;
-        transform.position += transform.up * vVerticalActive * Time.deltaTime;
+        transform.position += transform.forward * vForwardCurrent * Time.deltaTime;
+        transform.position += transform.right * vSideCurrent * Time.deltaTime;
+        transform.position += transform.up * vVerticalCurrent * Time.deltaTime;
         */
     }
 }
