@@ -60,6 +60,7 @@ public class NewMovement : MonoBehaviour
         //Calculate Forward Velcoity and move with rigidbody velocity
         rb.velocity = new Vector3(transform.forward.x * vForwardCurrent, transform.forward.y * vForwardCurrent, transform.forward.z * vForwardCurrent);
 
+
         //Level out ship's roll
         if(Input.GetAxisRaw("Horizontal") == 0)
         {
