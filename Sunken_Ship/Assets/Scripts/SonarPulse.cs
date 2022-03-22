@@ -5,20 +5,15 @@ using UnityEngine;
 public class SonarPulse : MonoBehaviour
 {
     [SerializeField]
-    Vector3 endPos;
+    Vector3 startScale;
     [SerializeField]
-    Vector3 startPos;
-    [SerializeField]
-    float startFOV;
-    [SerializeField]
-    float endFOV;
-    [SerializeField]
-    Camera camera;
+    Vector3 endScale;
     [SerializeField]
     float pulseSpeed;
+    [SerializeField]
+    GameObject hitbox;
 
     private float length;
-    private float diffFOV;
     private float startTime;
 
     // Start is called before the first frame update
@@ -27,11 +22,8 @@ public class SonarPulse : MonoBehaviour
         // Keep track of when the movement started
         startTime = Time.time;
 
-        // Calculate the distance the camera travels
-        length = Vector3.Distance(startPos, endPos);
-
-        // Calculate the change in FOV
-        diffFOV = endFOV - startFOV;
+        // Calculate the change in scale
+        length = Vector3.Distance(startScale, endScale);
     }
 
     // Update is called once per frame
@@ -41,13 +33,11 @@ public class SonarPulse : MonoBehaviour
 
         float distTraveled = distCovered / length;
 
-        camera.transform.localPosition = Vector3.Lerp(startPos, endPos, distTraveled);
+        hitbox.transform.localScale = Vector3.Lerp(startScale, endScale, distTraveled);
 
-        camera.fieldOfView = Mathf.Lerp(startFOV, endFOV, distTraveled);
-        if(Vector3.Distance(camera.transform.localPosition, endPos) <= 0.5)
+        if(Vector3.Distance(hitbox.transform.localScale, endScale) <= 0.5)
         {
-            camera.transform.localPosition = startPos;
-            camera.fieldOfView = startFOV;
+            hitbox.transform.localScale = startScale;
             startTime = Time.time;
         }
     }
