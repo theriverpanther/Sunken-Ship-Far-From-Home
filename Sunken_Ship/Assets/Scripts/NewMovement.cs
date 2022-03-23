@@ -6,7 +6,7 @@ public class NewMovement : MonoBehaviour
 {
     //Movement Speeds
     [SerializeField] float vForward = 20f;
-    [SerializeField] float vRoll = 20f;
+    [SerializeField] float vRoll = 50f;
     [SerializeField] float lookRotateSpeed = 50f;
 
     //Acceleration
@@ -46,6 +46,7 @@ public class NewMovement : MonoBehaviour
         mouseDistance.y = Mathf.Pow((lookInput.y - screenCenter.y) / screenCenter.y, 3);
         mouseDistance = Vector2.ClampMagnitude(mouseDistance, 1f);
 
+
         //Calculate Linear Interpolation for Input
         vForwardCurrent = Mathf.Lerp(vForwardCurrent, Input.GetAxisRaw("Vertical") * vForward, aForward * Time.deltaTime); //W and S for forward/back
         vRollCurrent = Mathf.Lerp(vRollCurrent, Input.GetAxisRaw("Horizontal") * -1, aSide * Time.deltaTime); //A and D for rolling left and right
@@ -58,6 +59,36 @@ public class NewMovement : MonoBehaviour
 
         //Calculate Forward Velcoity and move with rigidbody velocity
         rb.velocity = new Vector3(transform.forward.x * vForwardCurrent, transform.forward.y * vForwardCurrent, transform.forward.z * vForwardCurrent);
+
+
+        //Level out ship's roll
+        if(Input.GetAxisRaw("Horizontal") == 0)
+        {
+            if(transform.rotation.eulerAngles.z > 180)
+            {
+                transform.Rotate(0, 0, 0.05f);
+            }
+            if(transform.rotation.eulerAngles.z < 180)
+            {
+                transform.Rotate(0, 0, -0.05f);
+                //Debug.Log("TEST?");
+                //Debug.Log(transform.rotation.eulerAngles.z);
+            }
+        }
+
+        if (Mathf.Abs(mouseDistance.y) < 0.1f)
+        {
+            if (transform.rotation.eulerAngles.x > 180)
+            {
+                transform.Rotate(0.02f, 0.0f, 0.0f);
+            }
+            if (transform.rotation.eulerAngles.x < 180)
+            {
+                transform.Rotate(-0.02f, 0.0f, 0.0f);
+            }
+        }
+
+        //Level out ship's pitch
 
 
         //vSideCurrent = Mathf.Lerp(vSideCurrent, Input.GetAxisRaw("Horizontal") * vSide, aSide * Time.deltaTime);
