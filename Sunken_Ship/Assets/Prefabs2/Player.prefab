@@ -63,7 +63,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 567
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -147,6 +147,7 @@ MonoBehaviour:
   angularVelocity: 0
   test: {x: 0, y: 0, z: 0}
   energy: 1
+  originalRotationValue: {x: 0, y: 0, z: 0, w: 0}
 --- !u!54 &5714713814128137335
 Rigidbody:
   m_ObjectHideFlags: 0

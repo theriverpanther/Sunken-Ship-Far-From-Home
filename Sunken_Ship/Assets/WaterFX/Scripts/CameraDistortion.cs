@@ -56,9 +56,6 @@ public class CameraDistortion : MonoBehaviour
         distortion.centerX.value = x;
         distortion.centerY.value = y;
 
-        // Show the filter values on the console
-        Debug.Log("(" + x + ", " + y + ")");
-
         // Add to the timer
         timeRan += Time.deltaTime;
     }
