@@ -1,0 +1,1709 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2394807815857042017
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6519119048173807213}
+  - component: {fileID: 3324957477973656721}
+  - component: {fileID: 140862144001159186}
+  m_Layer: 0
+  m_Name: RandomWall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6519119048173807213
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2394807815857042017}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_Children:
+  - {fileID: 4887059331341429144}
+  - {fileID: 7183264992905239990}
+  - {fileID: 3977896515433908833}
+  - {fileID: 947678411735968607}
+  - {fileID: 6671427316613957693}
+  - {fileID: 1643624115299782005}
+  - {fileID: 4632490336261844790}
+  - {fileID: 4602673677744983284}
+  - {fileID: 4970073444963886420}
+  - {fileID: 5263779067871197934}
+  - {fileID: 7274696747874918568}
+  - {fileID: 2947591429783365500}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3324957477973656721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2394807815857042017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ed4ba426f8d61246a8d131d6dfe2882, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChildToDestroy: 0
+--- !u!114 &140862144001159186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2394807815857042017}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eaa00b1a14f1a748a707d2cb8944432, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &7554877730238215186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2947591429783365500}
+  m_Layer: 0
+  m_Name: DoNotDestroy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2947591429783365500
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7554877730238215186}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5570249081828906261}
+  - {fileID: 4851344405632333016}
+  - {fileID: 5448100920971947928}
+  - {fileID: 1718872862786120144}
+  - {fileID: 7208052227651972247}
+  - {fileID: 8258466235611639102}
+  - {fileID: 1772872695600283355}
+  - {fileID: 3950287072298469716}
+  - {fileID: 8442596782000029511}
+  - {fileID: 1292225397778713363}
+  m_Father: {fileID: 6519119048173807213}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1405191126561039867
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6519119048173807213}
+    m_Modifications:
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 46.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00057828426
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7217937
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.68599164
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.06324189
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.06655641
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -79.073
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -74.445
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -285.285
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_Name
+      value: Thai Beach Coral_ufnwacrfa (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_TagString
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+--- !u!4 &4602673677744983284 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+  m_PrefabInstance: {fileID: 1405191126561039867}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1913462052158922843
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2947591429783365500}
+    m_Modifications:
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200.00002
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -35.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 90.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00057828426
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5319593
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5055835
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.4679441
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.4923748
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -4.421
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -87.078
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 89.776
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_Name
+      value: Thai Beach Coral_ufnwacrfa (17)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+--- !u!4 &3950287072298469716 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+  m_PrefabInstance: {fileID: 1913462052158922843}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1975837232288211822
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6519119048173807213}
+    m_Modifications:
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 21.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.6184206
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00057828426
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.641208
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.60939807
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.32127774
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.33803394
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -34.353
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 86.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -88.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_Name
+      value: Thai Beach Coral_ufnwacrfa (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_TagString
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+--- !u!4 &3977896515433908833 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+  m_PrefabInstance: {fileID: 1975837232288211822}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2411979751605420624
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6519119048173807213}
+    m_Modifications:
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 24.766848
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 21.510593
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00057828426
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7165781
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.6810329
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.10382271
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.109228715
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -72.429
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 80.306
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -80.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_Name
+      value: Thai Beach Coral_ufnwacrfa (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_TagString
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+--- !u!4 &947678411735968607 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+  m_PrefabInstance: {fileID: 2411979751605420624}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3802521199079725012
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2947591429783365500}
+    m_Modifications:
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200.00002
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 90.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00057828426
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5319593
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5055835
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.4679441
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.4923748
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -4.421
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -87.078
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 89.776
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_Name
+      value: Thai Beach Coral_ufnwacrfa (16)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+--- !u!4 &1772872695600283355 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+  m_PrefabInstance: {fileID: 3802521199079725012}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4220037623768540282
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6519119048173807213}
+    m_Modifications:
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -36.877968
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 21.773544
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00057828426
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7248289
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.68887603
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0058763307
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0061958265
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -86.927
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -18.548
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 18.574
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_Name
+      value: Thai Beach Coral_ufnwacrfa (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_TagString
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+--- !u!4 &1643624115299782005 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+  m_PrefabInstance: {fileID: 4220037623768540282}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4288956762525565151
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2947591429783365500}
+    m_Modifications:
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 99.999985
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 44.07146
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 56.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00057828426
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.72465944
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.6887147
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.016027711
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.016851557
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -86.052
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 42.416
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -42.483
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_Name
+      value: Thai Beach Coral_ufnwacrfa (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+--- !u!4 &1718872862786120144 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+  m_PrefabInstance: {fileID: 4288956762525565151}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4445385535470625308
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2947591429783365500}
+    m_Modifications:
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100.000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -48.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 32.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00057828426
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7078207
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.67271686
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.14845417
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.15621531
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -64.951
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -83.105
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 83.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_Name
+      value: Thai Beach Coral_ufnwacrfa (19)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+--- !u!4 &1292225397778713363 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+  m_PrefabInstance: {fileID: 4445385535470625308}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5212885779010602392
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2947591429783365500}
+    m_Modifications:
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 99.999985
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 44.07146
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 79.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00057828426
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.72465944
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.6887147
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.016027711
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.016851557
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -86.052
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 42.416
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -42.483
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_Name
+      value: Thai Beach Coral_ufnwacrfa (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+--- !u!4 &7208052227651972247 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+  m_PrefabInstance: {fileID: 5212885779010602392}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5236328017440164263
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6519119048173807213}
+    m_Modifications:
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 70.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00057828426
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.37334615
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.3548163
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5904995
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.6213118
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 27.958
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 86.701
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -451.547
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_Name
+      value: Thai Beach Coral_ufnwacrfa (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_TagString
+      value: 11
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+--- !u!4 &7274696747874918568 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+  m_PrefabInstance: {fileID: 5236328017440164263}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5760055284154889401
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6519119048173807213}
+    m_Modifications:
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -23.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.51934105
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.4936375
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.48058704
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.50561154
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -1.533
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -87.092
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 89.922
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_Name
+      value: Thai Beach Coral_ufnwacrfa (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_TagString
+      value: 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+--- !u!4 &7183264992905239990 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+  m_PrefabInstance: {fileID: 5760055284154889401}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6446313228837574216
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2947591429783365500}
+    m_Modifications:
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100.000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -48.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 71.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00057828426
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7078207
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.67271686
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.14845417
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.15621531
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -64.951
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -83.105
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 83.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_Name
+      value: Thai Beach Coral_ufnwacrfa (18)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+--- !u!4 &8442596782000029511 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+  m_PrefabInstance: {fileID: 6446313228837574216}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6828637883268858929
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2947591429783365500}
+    m_Modifications:
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200.00002
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 29.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 90.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00057828426
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5319593
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5055835
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.4679441
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.4923748
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -4.421
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -87.078
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 89.776
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_Name
+      value: Thai Beach Coral_ufnwacrfa (15)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+--- !u!4 &8258466235611639102 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+  m_PrefabInstance: {fileID: 6828637883268858929}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6994730925601848346
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2947591429783365500}
+    m_Modifications:
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -51.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00057828426
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7187496
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.6830991
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.08921841
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.09388742
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -74.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -78.792
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 79.173
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_Name
+      value: Thai Beach Coral_ufnwacrfa (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+--- !u!4 &5570249081828906261 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+  m_PrefabInstance: {fileID: 6994730925601848346}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7301308737861260257
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6519119048173807213}
+    m_Modifications:
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 18.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 69.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00057828426
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.65690845
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.62432885
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.29120037
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.3064101
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -39.926
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -86.199
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 87.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_Name
+      value: Thai Beach Coral_ufnwacrfa (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_TagString
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+--- !u!4 &5263779067871197934 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+  m_PrefabInstance: {fileID: 7301308737861260257}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7477185241513625239
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2947591429783365500}
+    m_Modifications:
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 99.999985
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 44.07146
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 27.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00057828426
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.72465944
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.6887147
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.016027711
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.016851557
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -86.052
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 42.416
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -42.483
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_Name
+      value: Thai Beach Coral_ufnwacrfa (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+--- !u!4 &5448100920971947928 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+  m_PrefabInstance: {fileID: 7477185241513625239}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7540989262084754523
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6519119048173807213}
+    m_Modifications:
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -36.518078
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 55.42978
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.12982231
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.23519547
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.21567845
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.66717154
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.67308843
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 52.814
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 88.414
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -449.918
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_Name
+      value: Thai Beach Coral_ufnwacrfa (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_TagString
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+--- !u!4 &4970073444963886420 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+  m_PrefabInstance: {fileID: 7540989262084754523}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7788465219627730489
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6519119048173807213}
+    m_Modifications:
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 44.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00057828426
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.08430137
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0801327
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.68422383
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7199374
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 76.333
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -77.576
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -257.91602
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_Name
+      value: Thai Beach Coral_ufnwacrfa (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_TagString
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+--- !u!4 &4632490336261844790 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+  m_PrefabInstance: {fileID: 7788465219627730489}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8001971539656269271
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2947591429783365500}
+    m_Modifications:
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 99.999985
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 44.07146
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.2238579
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00057828426
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.72465944
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.6887147
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.016027711
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.016851557
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -86.052
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 42.416
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -42.483
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_Name
+      value: Thai Beach Coral_ufnwacrfa (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+--- !u!4 &4851344405632333016 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+  m_PrefabInstance: {fileID: 8001971539656269271}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8038243780184850583
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6519119048173807213}
+    m_Modifications:
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7248161
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.6889425
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -87.093
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_Name
+      value: Thai Beach Coral_ufnwacrfa
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_TagString
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+--- !u!4 &4887059331341429144 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+  m_PrefabInstance: {fileID: 8038243780184850583}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8127428859716477234
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6519119048173807213}
+    m_Modifications:
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -14.729834
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 22.6725
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.00057828426
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.63733786
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.60571903
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.32816038
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.34527618
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -33.058
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 86.523
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -88.101
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_Name
+      value: Thai Beach Coral_ufnwacrfa (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6028738673812996455, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+      propertyPath: m_TagString
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+--- !u!4 &6671427316613957693 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
+  m_PrefabInstance: {fileID: 8127428859716477234}
+  m_PrefabAsset: {fileID: 0}
