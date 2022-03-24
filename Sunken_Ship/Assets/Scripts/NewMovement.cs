@@ -17,6 +17,7 @@ public class NewMovement : MonoBehaviour
     //Current Velocity
     [SerializeField] private float vForwardCurrent;
     [SerializeField] private float vRollCurrent;
+    [SerializeField] private float vPitchCurrent;
     [SerializeField] private float vMouseCurrentx;
     [SerializeField] private float vMouseCurrenty;
 
@@ -48,47 +49,50 @@ public class NewMovement : MonoBehaviour
 
 
         //Calculate Linear Interpolation for Input
-        vForwardCurrent = Mathf.Lerp(vForwardCurrent, Input.GetAxisRaw("Vertical") * vForward, aForward * Time.deltaTime); //W and S for forward/back
-        vRollCurrent = Mathf.Lerp(vRollCurrent, Input.GetAxisRaw("Horizontal") * -1, aSide * Time.deltaTime); //A and D for rolling left and right
         vMouseCurrentx = Mathf.Lerp(vMouseCurrentx, mouseDistance.x, aMouse * Time.deltaTime);
         vMouseCurrenty = Mathf.Lerp(vMouseCurrenty, mouseDistance.y, aMouse * Time.deltaTime);
 
-
-        //Rotation code for each axis, x and y are controlled by the mouse and z is controlled by pressing A and D
-        transform.Rotate(-vMouseCurrenty * lookRotateSpeed * Time.deltaTime, vMouseCurrentx * lookRotateSpeed * Time.deltaTime, vRollCurrent * vRoll * Time.deltaTime, Space.Self);
-
-        //Calculate Forward Velcoity and move with rigidbody velocity
-        rb.velocity = new Vector3(transform.forward.x * vForwardCurrent, transform.forward.y * vForwardCurrent, transform.forward.z * vForwardCurrent);
+        vForwardCurrent = Mathf.Lerp(vForwardCurrent, Input.GetAxisRaw("Vertical") * vForward, aForward * Time.deltaTime); //W and S for forward/back
+        vRollCurrent = Mathf.Lerp(vRollCurrent, Input.GetAxisRaw("Horizontal") * -vRoll, aSide * Time.deltaTime); //A and D for rolling left and right
 
 
         //Level out ship's roll
-        if(Input.GetAxisRaw("Horizontal") == 0)
+        if (Input.GetAxisRaw("Horizontal") == 0)
         {
             if(transform.rotation.eulerAngles.z > 180)
             {
-                transform.Rotate(0, 0, 0.05f);
+                vRollCurrent = Mathf.Lerp(vRollCurrent, 1.0f * vRoll / 2, aSide * Time.deltaTime);
             }
-            if(transform.rotation.eulerAngles.z < 180)
+            else if(transform.rotation.eulerAngles.z < 180)
             {
-                transform.Rotate(0, 0, -0.05f);
-                //Debug.Log("TEST?");
-                //Debug.Log(transform.rotation.eulerAngles.z);
+                vRollCurrent = Mathf.Lerp(vRollCurrent, -1.0f * vRoll / 2, aSide * Time.deltaTime);
+                //transform.Rotate(0, 0, -0.05f);
             }
         }
-
-        if (Mathf.Abs(mouseDistance.y) < 0.1f)
+        //Level out ship's pitch
+        if (Mathf.Abs(mouseDistance.y) < 0.1f) //If mouse is close enough, rotate pitch towards horizon
         {
             if (transform.rotation.eulerAngles.x > 180)
             {
-                transform.Rotate(0.02f, 0.0f, 0.0f);
+                vPitchCurrent = Mathf.Lerp(vPitchCurrent, 1.0f * lookRotateSpeed / 4, aMouse * Time.deltaTime);
+                //transform.Rotate(0.02f, 0.0f, 0.0f);
             }
             if (transform.rotation.eulerAngles.x < 180)
             {
-                transform.Rotate(-0.02f, 0.0f, 0.0f);
+                vPitchCurrent = Mathf.Lerp(vPitchCurrent, -1.0f * lookRotateSpeed / 4, aMouse * Time.deltaTime);
             }
         }
+        else //If mouse is a certain distance away, move pitch towards mouse direction
+        {
+            vPitchCurrent = -vMouseCurrenty * lookRotateSpeed;
+        }
 
-        //Level out ship's pitch
+
+        //Rotation code for each axis, x and y are controlled by the mouse and z is controlled by pressing A and D
+        transform.Rotate(vPitchCurrent * Time.deltaTime, vMouseCurrentx * lookRotateSpeed * Time.deltaTime, vRollCurrent * Time.deltaTime, Space.Self);
+
+        //Calculate Forward Velcoity and move with rigidbody velocity
+        rb.velocity = new Vector3(transform.forward.x * vForwardCurrent, transform.forward.y * vForwardCurrent, transform.forward.z * vForwardCurrent);
 
 
         //vSideCurrent = Mathf.Lerp(vSideCurrent, Input.GetAxisRaw("Horizontal") * vSide, aSide * Time.deltaTime);
