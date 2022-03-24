@@ -61,11 +61,11 @@ public class NewMovement : MonoBehaviour
         {
             if(transform.rotation.eulerAngles.z > 180)
             {
-                vRollCurrent = Mathf.Lerp(vRollCurrent, 1.0f * vRoll, aSide * Time.deltaTime);
+                vRollCurrent = Mathf.Lerp(vRollCurrent, 1.0f * vRoll / 2, aSide * Time.deltaTime);
             }
             else if(transform.rotation.eulerAngles.z < 180)
             {
-                vRollCurrent = Mathf.Lerp(vRollCurrent, -1.0f * vRoll, aSide * Time.deltaTime);
+                vRollCurrent = Mathf.Lerp(vRollCurrent, -1.0f * vRoll / 2, aSide * Time.deltaTime);
                 //transform.Rotate(0, 0, -0.05f);
             }
         }
@@ -74,12 +74,12 @@ public class NewMovement : MonoBehaviour
         {
             if (transform.rotation.eulerAngles.x > 180)
             {
-                vPitchCurrent = Mathf.Lerp(vPitchCurrent, 1.0f * lookRotateSpeed / 2, aMouse * Time.deltaTime);
+                vPitchCurrent = Mathf.Lerp(vPitchCurrent, 1.0f * lookRotateSpeed / 4, aMouse * Time.deltaTime);
                 //transform.Rotate(0.02f, 0.0f, 0.0f);
             }
             if (transform.rotation.eulerAngles.x < 180)
             {
-                vPitchCurrent = Mathf.Lerp(vPitchCurrent, -1.0f * lookRotateSpeed / 2, aMouse * Time.deltaTime);
+                vPitchCurrent = Mathf.Lerp(vPitchCurrent, -1.0f * lookRotateSpeed / 4, aMouse * Time.deltaTime);
             }
         }
         else //If mouse is a certain distance away, move pitch towards mouse direction

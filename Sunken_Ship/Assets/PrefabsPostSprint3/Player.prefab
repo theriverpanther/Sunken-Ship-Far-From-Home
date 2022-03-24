@@ -716,7 +716,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -735,10 +735,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vForward: 20
-  vRoll: 20
-  lookRotateSpeed: 30
+  vRoll: 50
+  lookRotateSpeed: 50
   vForwardCurrent: 0
   vRollCurrent: 0
+  vPitchCurrent: 0
   vMouseCurrentx: 0
   vMouseCurrenty: 0
 --- !u!1 &6120902966265033660
