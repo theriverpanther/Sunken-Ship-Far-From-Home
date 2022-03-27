@@ -29,12 +29,28 @@ public class NewMovement : MonoBehaviour
     //Forces
     Rigidbody rb;
 
+    //Animation
+    GameObject rightFront;
+    GameObject rightMiddle;
+    GameObject rightBack;
+    GameObject leftFront;
+    GameObject leftMiddle;
+    GameObject leftBack;
+
     // Start is called before the first frame update
     void Start()
     {
         screenCenter.x = Screen.width / 2;
         screenCenter.y = Screen.height / 2;
         rb = gameObject.GetComponent<Rigidbody>();
+
+        //Animation
+        rightFront = GameObject.Find("Rf_empty");
+        rightMiddle = GameObject.Find("Rm_empty");
+        rightBack = GameObject.Find("Rb_empty");
+        leftFront = GameObject.Find("Lf_empty");
+        leftMiddle = GameObject.Find("Lm_empty");
+        leftBack = GameObject.Find("Lb_empty");
     }
 
     // Update is called once per frame
@@ -59,11 +75,11 @@ public class NewMovement : MonoBehaviour
         //Level out ship's roll
         if (Input.GetAxisRaw("Horizontal") == 0)
         {
-            if(transform.rotation.eulerAngles.z > 180)
+            if (transform.rotation.eulerAngles.z > 180)
             {
                 vRollCurrent = Mathf.Lerp(vRollCurrent, 1.0f * vRoll / 2, aSide * Time.deltaTime);
             }
-            else if(transform.rotation.eulerAngles.z < 180)
+            else if (transform.rotation.eulerAngles.z < 180)
             {
                 vRollCurrent = Mathf.Lerp(vRollCurrent, -1.0f * vRoll / 2, aSide * Time.deltaTime);
                 //transform.Rotate(0, 0, -0.05f);
@@ -102,5 +118,36 @@ public class NewMovement : MonoBehaviour
         transform.position += transform.right * vSideCurrent * Time.deltaTime;
         transform.position += transform.up * vVerticalCurrent * Time.deltaTime;
         */
+
+
+        //ANIMATION SECTION
+
+        //Forward and Backward
+        rightMiddle.transform.Rotate(0.0f, 0.0f, vForwardCurrent, Space.Self);
+        leftMiddle.transform.Rotate(0.0f, 0.0f, vForwardCurrent, Space.Self);
+
+        //Look up/down
+        rightBack.transform.Rotate(0.0f, vMouseCurrenty * 20, 0.0f, Space.Self);
+        leftBack.transform.Rotate(0.0f, vMouseCurrenty * 20, 0.0f, Space.Self);
+
+        //Look left/right
+        rightFront.transform.Rotate(0.0f, -vMouseCurrentx * 20, 0.0f, Space.Self);
+        leftFront.transform.Rotate(0.0f, vMouseCurrentx * 20, 0.0f, Space.Self);
+
+        //ROLL
+        if (Input.GetAxisRaw("Horizontal") != 0) //Prevent rotations being altered by the leveling-out mechanic
+        {
+            rightFront.transform.Rotate(0.0f, vRollCurrent, 0.0f, Space.Self);
+            leftFront.transform.Rotate(0.0f, -vRollCurrent, 0.0f, Space.Self);
+            rightBack.transform.Rotate(0.0f, vRollCurrent, 0.0f, Space.Self);
+            leftBack.transform.Rotate(0.0f, -vRollCurrent, 0.0f, Space.Self);
+        }
+        else
+        {
+            rightFront.transform.Rotate(0.0f, vRollCurrent / 4, 0.0f, Space.Self);
+            leftFront.transform.Rotate(0.0f, -vRollCurrent / 4, 0.0f, Space.Self);
+            rightBack.transform.Rotate(0.0f, vRollCurrent / 4, 0.0f, Space.Self);
+            leftBack.transform.Rotate(0.0f, -vRollCurrent / 4, 0.0f, Space.Self);
+        }
     }
 }
