@@ -29,13 +29,21 @@ public class NewMovement : MonoBehaviour
     //Forces
     Rigidbody rb;
 
-    //Animation
+    //ANIMATION
+    //Fans
     GameObject rightFront;
     GameObject rightMiddle;
     GameObject rightBack;
     GameObject leftFront;
     GameObject leftMiddle;
     GameObject leftBack;
+    //Bubbles
+    ParticleSystem.MainModule rightFrontB;
+    ParticleSystem.MainModule rightMiddleB;
+    ParticleSystem.MainModule rightBackB;
+    ParticleSystem.MainModule leftFrontB;
+    ParticleSystem.MainModule leftMiddleB;
+    ParticleSystem.MainModule leftBackB;
 
     // Start is called before the first frame update
     void Start()
@@ -44,13 +52,21 @@ public class NewMovement : MonoBehaviour
         screenCenter.y = Screen.height / 2;
         rb = gameObject.GetComponent<Rigidbody>();
 
-        //Animation
+        //Animation FANS
         rightFront = GameObject.Find("Rf_empty");
         rightMiddle = GameObject.Find("Rm_empty");
         rightBack = GameObject.Find("Rb_empty");
         leftFront = GameObject.Find("Lf_empty");
         leftMiddle = GameObject.Find("Lm_empty");
         leftBack = GameObject.Find("Lb_empty");
+
+        //Animation BUBBLES
+        rightFrontB = GameObject.Find("Rf_bubbles").GetComponent<ParticleSystem>().main;
+        rightMiddleB = GameObject.Find("Rm_bubbles").GetComponent<ParticleSystem>().main;
+        rightBackB = GameObject.Find("Rb_bubbles").GetComponent<ParticleSystem>().main;
+        leftFrontB = GameObject.Find("Lf_bubbles").GetComponent<ParticleSystem>().main;
+        leftMiddleB = GameObject.Find("Lm_bubbles").GetComponent<ParticleSystem>().main;
+        leftBackB = GameObject.Find("Lb_bubbles").GetComponent<ParticleSystem>().main;
     }
 
     // Update is called once per frame
@@ -125,22 +141,43 @@ public class NewMovement : MonoBehaviour
         //Forward and Backward
         rightMiddle.transform.Rotate(0.0f, 0.0f, vForwardCurrent, Space.Self);
         leftMiddle.transform.Rotate(0.0f, 0.0f, vForwardCurrent, Space.Self);
+        rightMiddleB.simulationSpeed = Mathf.Abs(vForwardCurrent);
+        leftMiddleB.simulationSpeed = Mathf.Abs(vForwardCurrent);
+        rightMiddleB.startSpeed = Mathf.Round(vForwardCurrent);
+        leftMiddleB.startSpeed = Mathf.Round(vForwardCurrent);
 
         //Look up/down
         rightBack.transform.Rotate(0.0f, vMouseCurrenty * 20, 0.0f, Space.Self);
         leftBack.transform.Rotate(0.0f, vMouseCurrenty * 20, 0.0f, Space.Self);
+        rightBackB.simulationSpeed = Mathf.Abs(vMouseCurrenty * 20);
+        leftBackB.simulationSpeed = Mathf.Abs(vMouseCurrenty * 20);
+        rightBackB.startSpeed = Mathf.Round(vMouseCurrenty * 20);
+        leftBackB.startSpeed = Mathf.Round(vMouseCurrenty * 20);
 
         //Look left/right
-        rightFront.transform.Rotate(0.0f, -vMouseCurrentx * 20, 0.0f, Space.Self);
-        leftFront.transform.Rotate(0.0f, vMouseCurrentx * 20, 0.0f, Space.Self);
+        rightFront.transform.Rotate(0.0f, vMouseCurrentx * 20, 0.0f, Space.Self);
+        leftFront.transform.Rotate(0.0f, -vMouseCurrentx * 20, 0.0f, Space.Self);
+        rightFrontB.simulationSpeed = Mathf.Abs(vMouseCurrentx * 20);
+        leftFrontB.simulationSpeed = Mathf.Abs(vMouseCurrentx * 20);
+        rightFrontB.startSpeed = Mathf.Round(vMouseCurrentx * 20);
+        leftFrontB.startSpeed = Mathf.Round(-vMouseCurrentx * 20);
 
         //ROLL
         if (Input.GetAxisRaw("Horizontal") != 0) //Prevent rotations being altered by the leveling-out mechanic
         {
-            rightFront.transform.Rotate(0.0f, vRollCurrent, 0.0f, Space.Self);
-            leftFront.transform.Rotate(0.0f, -vRollCurrent, 0.0f, Space.Self);
-            rightBack.transform.Rotate(0.0f, vRollCurrent, 0.0f, Space.Self);
-            leftBack.transform.Rotate(0.0f, -vRollCurrent, 0.0f, Space.Self);
+            rightFront.transform.Rotate(0.0f, -vRollCurrent, 0.0f, Space.Self);
+            leftFront.transform.Rotate(0.0f, vRollCurrent, 0.0f, Space.Self);
+            rightBack.transform.Rotate(0.0f, -vRollCurrent, 0.0f, Space.Self);
+            leftBack.transform.Rotate(0.0f, vRollCurrent, 0.0f, Space.Self);
+
+            rightFrontB.simulationSpeed = Mathf.Abs(-vRollCurrent);
+            leftFrontB.simulationSpeed = Mathf.Abs(vRollCurrent);
+            rightFrontB.startSpeed = Mathf.Round(-vRollCurrent);
+            leftFrontB.startSpeed = Mathf.Round(vRollCurrent);
+            rightBackB.simulationSpeed = Mathf.Abs(-vRollCurrent);
+            leftBackB.simulationSpeed = Mathf.Abs(vRollCurrent);
+            rightBackB.startSpeed = Mathf.Round(-vRollCurrent);
+            leftBackB.startSpeed = Mathf.Round(vRollCurrent);
         }
         else
         {
@@ -148,6 +185,15 @@ public class NewMovement : MonoBehaviour
             leftFront.transform.Rotate(0.0f, -vRollCurrent / 4, 0.0f, Space.Self);
             rightBack.transform.Rotate(0.0f, vRollCurrent / 4, 0.0f, Space.Self);
             leftBack.transform.Rotate(0.0f, -vRollCurrent / 4, 0.0f, Space.Self);
+
+            rightFrontB.simulationSpeed = Mathf.Abs(vMouseCurrentx * 20);
+            leftFrontB.simulationSpeed = Mathf.Abs(vMouseCurrentx * 20);
+            rightFrontB.startSpeed = Mathf.Round(vMouseCurrentx * 20);
+            leftFrontB.startSpeed = Mathf.Round(-vMouseCurrentx * 20);
+            rightBackB.simulationSpeed = Mathf.Abs(vMouseCurrenty * 20);
+            leftBackB.simulationSpeed = Mathf.Abs(vMouseCurrenty * 20);
+            rightBackB.startSpeed = Mathf.Round(vMouseCurrenty * 20);
+            leftBackB.startSpeed = Mathf.Round(vMouseCurrenty * 20);
         }
     }
 }
