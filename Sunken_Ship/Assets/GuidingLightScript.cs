@@ -7,6 +7,7 @@ public class GuidingLightScript : MonoBehaviour
 {
     public GameObject onOff;
     public bool isOn = false;
+    public bool isOnCooldown = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,19 +17,26 @@ public class GuidingLightScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if(Input.GetKey(KeyCode.E) && !isOn)
+       if(Input.GetKey(KeyCode.E) && !isOn && !isOnCooldown)
        {
             onOff.gameObject.SetActive(true);
             isOn = true;
+            isOnCooldown = true;
+            StartCoroutine(GuidingLightOnOff());
             StartCoroutine(GuidingLightCooldown());
        }
     }
 
-    IEnumerator GuidingLightCooldown()
+    IEnumerator GuidingLightOnOff()
     {
         yield return new WaitForSeconds(5);
         onOff.gameObject.SetActive(false);
         isOn = false;
+    }
+    IEnumerator GuidingLightCooldown()
+    {
+        yield return new WaitForSeconds(10);
+        isOnCooldown = false;
     }
 
 }
