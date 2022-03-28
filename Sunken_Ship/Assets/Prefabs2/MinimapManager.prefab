@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8270540100268182468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8270540100268182470}
+  - component: {fileID: 8270540100268182471}
+  m_Layer: 0
+  m_Name: MinimapManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8270540100268182470
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8270540100268182468}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8270540100268182471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8270540100268182468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 785009e9f06d9cb418bcfe78124dc070, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimapCamera: {fileID: 0}
+  tLeftCorner: {x: 0, y: 0, z: 0}
+  bLeftCorner: {x: 0, y: 0, z: 0}
+  tRightCorner: {x: 0, y: 0, z: 0}
+  bRightCorner: {x: 0, y: 0, z: 0}
+  enemyIconPrefab: {fileID: 4869559616121395731, guid: 943889fd3221cae4ca82fa5bcdf8b749, type: 3}
+  targetIconPrefab: {fileID: 4869559616121395731, guid: 65e2d47a01f3eaa4f813edd040701a9d, type: 3}
+  offScreenIconPrefab: {fileID: 526393306666098936, guid: 147011fd3c799774eaa00d944690171b, type: 3}
+  playerIconPrefab: {fileID: 6885309179560530298, guid: 178b3fdbe355c064880b481c3f2e7c2a, type: 3}
+  sonarPrefab: {fileID: 7938305108213739803, guid: acd27d5aefd70d044bd45776a3a857ca, type: 3}
+  player: {fileID: 0}
+  enemies: []
+  targets: []
+  targetOffScreenIcons: []
+  playerIcon: {fileID: 0}
+  sonarPulse: {fileID: 0}

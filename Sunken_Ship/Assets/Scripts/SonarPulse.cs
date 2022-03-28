@@ -11,8 +11,6 @@ public class SonarPulse : MonoBehaviour
     Vector3 endScale;
     [SerializeField]
     float pulseSpeed;
-    [SerializeField]
-    GameObject hitbox;
 
     private float length;
     private float startTime;
@@ -34,12 +32,27 @@ public class SonarPulse : MonoBehaviour
 
         float distTraveled = distCovered / length;
 
-        hitbox.transform.localScale = Vector3.Lerp(startScale, endScale, distTraveled);
+        this.gameObject.transform.localScale = Vector3.Lerp(startScale, endScale, distTraveled);
 
-        if(Vector3.Distance(hitbox.transform.localScale, endScale) <= 0.5)
+        if(Vector3.Distance(this.gameObject.transform.localScale, endScale) <= 0.5)
         {
-            hitbox.transform.localScale = startScale;
+            this.gameObject.transform.localScale = startScale;
             startTime = Time.time;
+        }
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.layer == 10 && other.gameObject.tag != "Player")
+        {
+            other.gameObject.GetComponent<MeshRenderer>().enabled = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.layer == 10 && other.gameObject.tag != "Player")
+        {
+            other.gameObject.GetComponent<MeshRenderer>().enabled = false;
         }
     }
 }
