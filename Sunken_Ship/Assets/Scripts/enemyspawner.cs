@@ -15,6 +15,10 @@ public class enemyspawner : MonoBehaviour
     public GameObject trap;
     public int numActive;
     public int maxActive;
+
+    [SerializeField]
+    private GameObject minimapManager;
+
     void Start()
     {
         SetRanges();
@@ -42,6 +46,7 @@ public class enemyspawner : MonoBehaviour
             zAxis = UnityEngine.Random.Range(Min.z, Max.z);
             randomPosition = new Vector3(xAxis, 45f, zAxis);
             GameObject Example = Instantiate(trap, randomPosition, Quaternion.identity);
+            minimapManager.GetComponent<MinimapManager>().AddEnemy(Example);
             Example.gameObject.tag = "Clone";
 
             numActive++;
