@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/ExperimentalEnvironment/SampleScene 1.unity
+    path: Assets/Scenes/ExperimentalEnvironment/SunkenShipMain.unity
     guid: 8ada20cb643d6d540b83ccaa3837f185
   - enabled: 1
     path: Assets/Scenes/ExperimentalEnvironment/Gameover.unity

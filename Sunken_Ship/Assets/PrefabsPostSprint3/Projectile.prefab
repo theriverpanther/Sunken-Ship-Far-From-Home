@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2027751520460647175}
   - component: {fileID: 4478233280567573911}
   - component: {fileID: 8551979270972030082}
+  - component: {fileID: 6453271733021849060}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 2515733113479348103}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0.5}
-  m_LocalScale: {x: 0.2, y: 1, z: 0.2}
+  m_LocalScale: {x: 0.2, y: 0.5, z: 0.2}
   m_Children: []
   m_Father: {fileID: 6744338829685133546}
   m_RootOrder: 0
@@ -112,7 +113,19 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
+--- !u!114 &6453271733021849060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2515733113479348103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb557c1b72c73604c9bd80e25b448334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8010538165650978935
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,5 +170,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec1a15f14677a0c448d003552fde58d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 70
+  speed: 150
   genesis: 0
