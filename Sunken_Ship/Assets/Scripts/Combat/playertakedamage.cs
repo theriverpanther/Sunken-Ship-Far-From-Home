@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class playertakedamage : MonoBehaviour
 {
@@ -11,6 +12,11 @@ public class playertakedamage : MonoBehaviour
     public void Update()
     {
         slider.value = playerhealth;
+        if (slider.value <= 0)
+        {
+            SceneManager.LoadScene(2);
+        }
+
     }
     void OnCollisionEnter(Collision col)
     {
