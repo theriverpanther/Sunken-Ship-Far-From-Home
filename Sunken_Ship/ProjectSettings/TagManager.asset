@@ -19,6 +19,8 @@ TagManager:
   - Khnumian
   - turret
   - torona
+  - bullet
+  - sentrybullet
   layers:
   - Default
   - TransparentFX
