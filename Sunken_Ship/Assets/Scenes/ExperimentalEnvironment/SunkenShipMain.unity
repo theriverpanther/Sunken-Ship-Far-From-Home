@@ -5585,6 +5585,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3197492722343897359, guid: 6c5d182a49f336047a8c1fc8c5913160, type: 3}
   m_PrefabInstance: {fileID: 5579307939171623856}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1413161257 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8270540100268182471, guid: e8417d8ec8a549445a0017d6591f8763, type: 3}
+  m_PrefabInstance: {fileID: 125774782}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 785009e9f06d9cb418bcfe78124dc070, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1418807360 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 800112381868687034, guid: beff40f98177be84eb0a096ad651347e, type: 3}
@@ -6586,6 +6597,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 860580496}
     m_Modifications:
+    - target: {fileID: 45475463080056303, guid: f910acace9067bb4aafa283b0187208d, type: 3}
+      propertyPath: minimap
+      value: 
+      objectReference: {fileID: 1413161257}
     - target: {fileID: 2734304299796789915, guid: f910acace9067bb4aafa283b0187208d, type: 3}
       propertyPath: aimTolerance
       value: 1
