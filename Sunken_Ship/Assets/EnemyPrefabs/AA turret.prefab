@@ -141,8 +141,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   angleLimit: 360
-  aimTolerance: 5
-  turnSpeed: 30
+  aimTolerance: 1
+  turnSpeed: 150
 --- !u!1 &2734304299868014351
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,8 +188,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   angleLimit: 360
-  aimTolerance: 3
-  turnSpeed: 30
+  aimTolerance: 1
+  turnSpeed: 90
 --- !u!1 &2734304300351467316
 GameObject:
   m_ObjectHideFlags: 0
@@ -295,7 +295,7 @@ MonoBehaviour:
   gunPoints:
   - {fileID: 2734304301474223108}
   - {fileID: 2734304300541383779}
-  fireRate: 0.2
+  fireRate: 2
 --- !u!65 &2734304300512570847
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -350,6 +350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selfReference: {fileID: 2734304300512570843}
+  minimap: {fileID: 0}
 --- !u!1 &2734304300541383772
 GameObject:
   m_ObjectHideFlags: 0
