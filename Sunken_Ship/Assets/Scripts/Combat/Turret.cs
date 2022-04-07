@@ -9,6 +9,7 @@ public class Turret : MonoBehaviour
     public Gun gun;
     public MountPoint[] mountPoints;
     public Transform target;
+    public int maxRange = 50;
 
     void OnDrawGizmos()
     {
@@ -46,21 +47,23 @@ public class Turret : MonoBehaviour
     {
         // do nothing when no target
         if (!target) return;
-
-        // aim target
-        var aimed = true;
-        foreach (var mountPoint in mountPoints)
+        else if ((Vector3.Distance(transform.position, target.transform.position) < maxRange))
         {
-            if (!mountPoint.Aim(target.position))
+            // aim target
+            var aimed = true;
+            foreach (var mountPoint in mountPoints)
             {
-                aimed = false;
+                if (!mountPoint.Aim(target.position))
+                {
+                    aimed = false;
+                }
             }
-        }
 
-        // shoot when aimed
-        if (aimed)
-        {
-            gun.Fire();
+            // shoot when aimed
+            if (aimed)
+            {
+                gun.Fire();
+            }
         }
     }
 }

@@ -11,7 +11,7 @@ public class turretlife : MonoBehaviour
         if (col.gameObject.tag == "bullet")
         {
             damage += 1;
-            if (damage == 7)
+            if (damage == 5)
             {
                 Destroy(gameObject);
             }
