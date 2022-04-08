@@ -5,11 +5,12 @@ using UnityEngine;
 public class MinimapDetectionScript : MonoBehaviour
 {
     public GameObject selfReference;
+    public MinimapManager minimap;
     // Start is called before the first frame update
     void Start()
     {
-        MinimapManager minimapManager = new MinimapManager();
-        minimapManager.AddEnemy(selfReference);
+        minimap = GameObject.Find("MinimapManager").GetComponent<MinimapManager>();
+        minimap.AddEnemy(selfReference);
     }
 
     // Update is called once per frame
