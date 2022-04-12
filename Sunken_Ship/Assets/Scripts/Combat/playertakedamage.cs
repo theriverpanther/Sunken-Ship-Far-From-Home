@@ -26,16 +26,18 @@ public class playertakedamage : MonoBehaviour
             Debug.Log(playerHealth);
             //damage += 5;
            // if (damage == playerhealth )
-                if(playerHealth == 0)
-            {
+             if(playerhealth == 0)
+             {
                 Destroy(gameObject);
+                SceneManager.LoadScene(2);
                // Debug.Log(playerhealth);
-            }
+             }
         }
         if (col.gameObject.tag == "torona")
         {
             
                 Destroy(gameObject);
+                SceneManager.LoadScene(2);
            
         }
         if (col.gameObject.tag == "Khnumian")
@@ -46,6 +48,7 @@ public class playertakedamage : MonoBehaviour
             if (playerHealth == 0)
             {
                 Destroy(gameObject);
+                SceneManager.LoadScene(2);
                
             }
         }
