@@ -26,10 +26,10 @@ public class playertakedamage : MonoBehaviour
             Debug.Log(playerHealth);
             //damage += 5;
            // if (damage == playerhealth )
-             if(playerhealth == 0)
+             if(playerHealth <= 0)
              {
                 Destroy(gameObject);
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene(3);
                // Debug.Log(playerhealth);
              }
         }
@@ -37,7 +37,7 @@ public class playertakedamage : MonoBehaviour
         {
             
                 Destroy(gameObject);
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene(3);
            
         }
         if (col.gameObject.tag == "Khnumian")
@@ -48,7 +48,7 @@ public class playertakedamage : MonoBehaviour
             if (playerHealth == 0)
             {
                 Destroy(gameObject);
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene(3);
                
             }
         }

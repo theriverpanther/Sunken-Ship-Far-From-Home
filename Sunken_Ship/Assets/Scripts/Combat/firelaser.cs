@@ -26,32 +26,27 @@ public class firelaser : MonoBehaviour
             if (Input.GetButton("Fire1") && Time.time > lastfire + firerate)
             {
                 lastfire = Time.time;
-                fireslaser();
-            }
-        }
-        if (Input.GetButton("Fire1") && Time.time > lastfire + firerate)
-        {
-            lastfire = Time.time;
 
-            if (useFlare)
-            {
-                FireFlare();
+                if (useFlare)
+                {
+                    FireFlare();
+                }
+                else
+                {
+                    fireslaser();
+                }
             }
-            else
-            {
-                fireslaser();
-            }
-        }
 
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            if (useFlare)
+            if (Input.GetKeyDown(KeyCode.Q))
             {
-                useFlare = false;
-            }
-            else
-            {
-                useFlare = true;
+                if (useFlare)
+                {
+                    useFlare = false;
+                }
+                else
+                {
+                    useFlare = true;
+                }
             }
         }
     }
