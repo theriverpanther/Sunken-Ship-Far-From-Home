@@ -20,6 +20,8 @@ public class GameLoader : MonoBehaviour
     void Awake()
     {
         instance = this;
+        DontDestroyOnLoad(this.gameObject);
+        //DontDestroyOnLoad(SceneManager[0]);
         StartCoroutine(LoadStart());
     }
 
