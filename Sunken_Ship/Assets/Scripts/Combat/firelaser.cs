@@ -8,20 +8,24 @@ public class firelaser : MonoBehaviour
     public float firerate;
     public GameObject laserprefab;
 
-   
+    public GameMenuManager manager;
+
+    private void Start()
+    {
+        manager = GameObject.Find("Canvas").GetComponent<GameMenuManager>();
+    }
 
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetButton("Fire1") && Time.time > lastfire + firerate)
+        if(!manager.paused)
         {
-            lastfire = Time.time;
-            fireslaser();
-
+            if (Input.GetButton("Fire1") && Time.time > lastfire + firerate)
+            {
+                lastfire = Time.time;
+                fireslaser();
+            }
         }
-            
-
     }
 
     void fireslaser()

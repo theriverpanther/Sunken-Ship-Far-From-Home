@@ -9,10 +9,16 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
+    path: Assets/Scenes/UI/PersistentScene.unity
+    guid: b50065da6f4fd9245a6db550a5a872e7
+  - enabled: 1
+    path: Assets/Scenes/UI/MainMenu.unity
+    guid: c2128dff031ef06498a90ea1f3610de0
+  - enabled: 1
     path: Assets/Scenes/ExperimentalEnvironment/SunkenShipMain.unity
     guid: 8ada20cb643d6d540b83ccaa3837f185
   - enabled: 1
-    path: Assets/Scenes/ExperimentalEnvironment/GameOver.unity
+    path: Assets/Scenes/ExperimentalEnvironment/Gameover.unity
     guid: 46b2eb3fbe0e30f43bd57dd9418938ec
   - enabled: 1
     path: Assets/Scenes/ExperimentalEnvironment/Lost.unity

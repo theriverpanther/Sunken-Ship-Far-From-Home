@@ -72,6 +72,9 @@ public class MinimapManager : MonoBehaviour
         // Instantiate the minimap objects needed for the start of the game
         playerIcon = Instantiate(playerIconPrefab, Vector3.zero, Quaternion.identity);
         sonarPulse = Instantiate(sonarPrefab, Vector3.zero, Quaternion.identity);
+
+        // Code for testing purposes
+        AddTarget(GameObject.Find("Khnumian"));
     }
 
     private void Update()
