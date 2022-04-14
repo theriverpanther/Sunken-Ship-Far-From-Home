@@ -6,13 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class playertakedamage : MonoBehaviour
 {
-    private int playerhealth = 100;
-    public Slider slider;
+    private int playerHealth = 100;
+    public ProgressBar bar;
     //private int damage = 0;
     public void Update()
     {
-        slider.value = playerhealth;
-        if (slider.value <= 0)
+        bar.current = playerHealth;
+        if (bar.current <= 0)
         {
             SceneManager.LoadScene(2);
         }
@@ -22,14 +22,14 @@ public class playertakedamage : MonoBehaviour
     {
         if (col.gameObject.tag == "sentrybullet")
         {
-            playerhealth = playerhealth - 5;
-            Debug.Log(playerhealth);
+            playerHealth = playerHealth - 5;
+            Debug.Log(playerHealth);
             //damage += 5;
            // if (damage == playerhealth )
-             if(playerhealth == 0)
+             if(playerHealth <= 0)
              {
                 Destroy(gameObject);
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene(3);
                // Debug.Log(playerhealth);
              }
         }
@@ -37,18 +37,18 @@ public class playertakedamage : MonoBehaviour
         {
             
                 Destroy(gameObject);
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene(3);
            
         }
         if (col.gameObject.tag == "Khnumian")
         {
-            playerhealth = playerhealth - 20;
+            playerHealth = playerHealth - 20;
             //damage += 20;
-            Debug.Log(playerhealth);
-            if (playerhealth == 0)
+            Debug.Log(playerHealth);
+            if (playerHealth == 0)
             {
                 Destroy(gameObject);
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene(3);
                
             }
         }

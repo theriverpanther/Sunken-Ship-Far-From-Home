@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 142869218}
   m_Layer: 0
   m_Name: Collider
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,12 +107,12 @@ GameObject:
   - component: {fileID: 738194662}
   - component: {fileID: 738194663}
   m_Layer: 0
-  m_Name: Spot Light
+  m_Name: Right Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &738194662
 Transform:
   m_ObjectHideFlags: 0
@@ -189,6 +189,53 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &746817454
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 746817455}
+  - component: {fileID: 746817456}
+  m_Layer: 0
+  m_Name: LaserEmiter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &746817455
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746817454}
+  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: -0.0034, y: 0.0026, z: -0.0591}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4664489893714115527}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
+--- !u!114 &746817456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746817454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee106b11aa2185046b431460e3fdfd57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firerate: 0.25
+  laserprefab: {fileID: 8010538165650978935, guid: afc07adae80aa5c4d97c6f785e6593a3, type: 3}
+  flarePrefab: {fileID: 4018042333279345215, guid: c0dca4ff55445cc459fea7faf762f3dd, type: 3}
+  useFlare: 1
 --- !u!1 &1914839943
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,12 +247,12 @@ GameObject:
   - component: {fileID: 1914839944}
   - component: {fileID: 1914839945}
   m_Layer: 0
-  m_Name: Spot Light (1)
+  m_Name: Left Beam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1914839944
 Transform:
   m_ObjectHideFlags: 0
@@ -1207,7 +1254,7 @@ GameObject:
   - component: {fileID: 5129918443332140080}
   - component: {fileID: 5129918443332140081}
   m_Layer: 0
-  m_Name: Point Light
+  m_Name: Ship Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1239,7 +1286,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6745283, g: 0.8003035, b: 1, a: 1}
-  m_Intensity: 2
+  m_Intensity: 1
   m_Range: 40
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1441,6 +1488,7 @@ Transform:
   - {fileID: 3984526564098431640}
   - {fileID: 3078045771678847110}
   - {fileID: 8271895236809836955}
+  - {fileID: 746817455}
   m_Father: {fileID: 6120902965998841014}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -1591,6 +1639,7 @@ GameObject:
   - component: {fileID: 6120902965998841012}
   - component: {fileID: 6120902965998841000}
   - component: {fileID: 6120902965998841015}
+  - component: {fileID: 1423402964108008563}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1672,6 +1721,19 @@ MonoBehaviour:
   vPitchCurrent: 0
   vMouseCurrentx: 0
   vMouseCurrenty: 0
+--- !u!114 &1423402964108008563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6120902965998841002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d27e15f30740574ea26b6a435d1b7b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slider: {fileID: 0}
 --- !u!1 &6120902966265033660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1735,7 +1797,7 @@ Camera:
   m_Depth: 2
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 5687
+    m_Bits: 4663
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
