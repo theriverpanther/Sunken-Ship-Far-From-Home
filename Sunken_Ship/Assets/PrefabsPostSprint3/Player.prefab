@@ -235,6 +235,7 @@ MonoBehaviour:
   firerate: 0.25
   laserprefab: {fileID: 8010538165650978935, guid: afc07adae80aa5c4d97c6f785e6593a3, type: 3}
   flarePrefab: {fileID: 4018042333279345215, guid: c0dca4ff55445cc459fea7faf762f3dd, type: 3}
+  manager: {fileID: 0}
   useFlare: 1
 --- !u!1 &1914839943
 GameObject:
@@ -1713,6 +1714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d12b273e1ccf87142b7c43af86146559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  manager: {fileID: 0}
   vForward: 20
   vRoll: 50
   lookRotateSpeed: 50
@@ -1733,7 +1735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d27e15f30740574ea26b6a435d1b7b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 0}
+  bar: {fileID: 0}
 --- !u!1 &6120902966265033660
 GameObject:
   m_ObjectHideFlags: 0
