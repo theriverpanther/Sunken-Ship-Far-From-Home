@@ -49,10 +49,10 @@ MonoBehaviour:
     value: 1
   centerX:
     overrideState: 1
-    value: 0.14409229
+    value: 1
   centerY:
     overrideState: 1
-    value: 1
+    value: -0.99922794
   scale:
     overrideState: 1
     value: 1
