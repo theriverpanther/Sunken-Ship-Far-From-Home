@@ -5,7 +5,7 @@ using UnityEngine;
 public class NewMovement : MonoBehaviour
 {
     // Game State
-    [SerializeField] GameMenuManager manager;
+  //  [SerializeField] GameMenuManager manager;
 
     //Movement Speeds
     [SerializeField] float vForward = 20f;
@@ -52,7 +52,7 @@ public class NewMovement : MonoBehaviour
     void Start()
     {
         // Game State Tracking
-        manager = GameObject.Find("Canvas").GetComponent<GameMenuManager>();
+       // manager = GameObject.Find("Canvas").GetComponent<GameMenuManager>();
 
         Cursor.visible = false;
         screenCenter.x = Screen.width / 2;
@@ -79,7 +79,7 @@ public class NewMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!manager.paused)
+      //  if(!manager.paused)
         {
             //Get Mouse Location on Screen
             lookInput.x = Input.mousePosition.x;
