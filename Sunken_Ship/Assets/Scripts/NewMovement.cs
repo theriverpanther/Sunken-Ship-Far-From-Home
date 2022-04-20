@@ -32,6 +32,18 @@ public class NewMovement : MonoBehaviour
     //Forces
     Rigidbody rb;
 
+    //Upgrade
+    [SerializeField] bool upgrade = true;
+    const float strafeConst = 0.72f;
+    [SerializeField] float strafeTime;
+    [SerializeField] bool sForward = false;
+    [SerializeField] bool sBack = false;
+    [SerializeField] bool sLeft = false;
+    [SerializeField] bool sRight = false;
+    Vector3 saveVelocity;
+    float saveRotation;
+    GameObject camera;
+    
     //ANIMATION
     //Fans
     GameObject rightFront;
@@ -74,12 +86,15 @@ public class NewMovement : MonoBehaviour
         leftFrontB = GameObject.Find("Lf_bubbles").GetComponent<ParticleSystem>().main;
         leftMiddleB = GameObject.Find("Lm_bubbles").GetComponent<ParticleSystem>().main;
         leftBackB = GameObject.Find("Lb_bubbles").GetComponent<ParticleSystem>().main;
+
+        //Camera
+        camera = GameObject.FindWithTag("MainCamera");
     }
 
     // Update is called once per frame
     void Update()
     {
-      //  if(!manager.paused)
+        //  if(!manager.paused)
         {
             //Get Mouse Location on Screen
             lookInput.x = Input.mousePosition.x;
@@ -144,6 +159,45 @@ public class NewMovement : MonoBehaviour
             transform.position += transform.up * vVerticalCurrent * Time.deltaTime;
             */
 
+            //STRAFE CODE
+            if (upgrade)
+            {
+                if (Input.GetKeyDown(KeyCode.Space))
+                {
+                    if (Input.GetKey(KeyCode.D)) {
+                        sRight = true;
+                        saveRotation = transform.rotation.eulerAngles.x;
+                        transform.Rotate(0.0f, 0.0f, 500.0f * Time.deltaTime);
+                        strafeTime = strafeConst;
+                    }
+                    if (Input.GetKey(KeyCode.A)) {
+                        sLeft = true;
+                        saveRotation = transform.rotation.eulerAngles.x;
+                        transform.Rotate(0.0f, 0.0f, -5.0f * Time.deltaTime);
+                    }
+                    if (Input.GetKey(KeyCode.W)) {
+                        sForward = true;
+                        saveRotation = transform.rotation.eulerAngles.z;
+                        transform.Rotate(5.0f * Time.deltaTime, 0.0f, 0.0f);
+                    }
+                    if (Input.GetKey(KeyCode.S)) {
+                        sBack = true;
+                        saveRotation = transform.rotation.eulerAngles.z;
+                        transform.Rotate(-5.0f * Time.deltaTime, 0.0f, 0.0f);
+                    }
+                }
+            }
+
+            if (sRight){
+                transform.Rotate(0.0f, 0.0f, 500.0f * Time.deltaTime);
+                camera.transform.Rotate(0.0f, 0.0f, -500.0f * Time.deltaTime);
+                strafeTime -= Time.deltaTime;
+
+                if(strafeTime <= 0)
+                {
+                    sRight = false;
+                }
+            }
 
             //ANIMATION SECTION
 
