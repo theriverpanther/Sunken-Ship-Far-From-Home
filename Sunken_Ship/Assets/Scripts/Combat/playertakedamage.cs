@@ -7,14 +7,14 @@ using UnityEngine.SceneManagement;
 public class playertakedamage : MonoBehaviour
 {
     private int playerHealth = 100;
-    public ProgressBar bar;
+  //  public ProgressBar bar;
     //private int damage = 0;
     public void Update()
     {
-        bar.current = playerHealth;
-        if (bar.current <= 0)
+     //   bar.current = playerHealth;
+     //   if (bar.current <= 0)
         {
-            SceneManager.LoadScene(2);
+           // SceneManager.LoadScene(2);
         }
 
     }

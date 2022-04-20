@@ -6,6 +6,7 @@ public class FlashlightPickup : MonoBehaviour
 {
     [SerializeField] GameObject[] shipLights;
     MinimapManager minimap;
+    [SerializeField] public GameObject tunnelLight;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +30,7 @@ public class FlashlightPickup : MonoBehaviour
             {
                 shipLights[i].SetActive(true);
             }
+            tunnelLight.gameObject.SetActive(true);
             Destroy(this.gameObject);
         }
     }
