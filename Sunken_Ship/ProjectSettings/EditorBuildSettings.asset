@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/UI/MainMenu.unity
     guid: c2128dff031ef06498a90ea1f3610de0
   - enabled: 1
+    path: Assets/Scenes/MainGameScenes/Tutorial.unity
+    guid: 59c9eaf588c5f6449b0ad94d9fcbe830
+  - enabled: 1
     path: Assets/Scenes/MainGameScenes/SunkenShipMain.unity
     guid: 8ada20cb643d6d540b83ccaa3837f185
   - enabled: 1
