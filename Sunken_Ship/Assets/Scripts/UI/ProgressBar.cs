@@ -12,6 +12,7 @@ public class ProgressBar : MonoBehaviour
     public Image mask;
     public Image fill;
     public Color color;
+    playertakedamage health;
 
     // Start is called before the first frame update
     void Start()

@@ -3,20 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class playertakedamage : MonoBehaviour
 {
     private int playerHealth = 100;
+    public TextMeshProUGUI HPtext;
+    private string Hpstring;
   //  public ProgressBar bar;
     //private int damage = 0;
     public void Update()
     {
-     //   bar.current = playerHealth;
-     //   if (bar.current <= 0)
-        {
-           // SceneManager.LoadScene(2);
-        }
-
+        
+        HPtext.text = "Hull Integrity " + playerHealth.ToString() + "%";
     }
     void OnCollisionEnter(Collision col)
     {
@@ -45,7 +44,7 @@ public class playertakedamage : MonoBehaviour
             playerHealth = playerHealth - 20;
             //damage += 20;
             Debug.Log(playerHealth);
-            if (playerHealth == 0)
+            if (playerHealth <= 0)
             {
                 Destroy(gameObject);
                 SceneManager.LoadScene(3);
