@@ -21,6 +21,7 @@ TagManager:
   - torona
   - bullet
   - sentrybullet
+  - model
   layers:
   - Default
   - TransparentFX

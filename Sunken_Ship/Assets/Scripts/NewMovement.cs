@@ -34,15 +34,16 @@ public class NewMovement : MonoBehaviour
 
     //Upgrade
     [SerializeField] bool upgrade = true;
-    const float strafeConst = 0.72f;
+    const float strafeConst = 0.7125f;
     [SerializeField] float strafeTime;
     [SerializeField] bool sForward = false;
     [SerializeField] bool sBack = false;
     [SerializeField] bool sLeft = false;
     [SerializeField] bool sRight = false;
     Vector3 saveVelocity;
-    float saveRotation;
+    Vector3 saveRotation;
     GameObject camera;
+    [SerializeField] GameObject model;
     
     //ANIMATION
     //Fans
@@ -89,6 +90,7 @@ public class NewMovement : MonoBehaviour
 
         //Camera
         camera = GameObject.FindWithTag("MainCamera");
+        model = GameObject.FindWithTag("model");
     }
 
     // Update is called once per frame
@@ -160,44 +162,85 @@ public class NewMovement : MonoBehaviour
             */
 
             //STRAFE CODE
-            if (upgrade)
+            if (upgrade && !sRight && !sLeft)
             {
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
+                    strafeTime = strafeConst;
+                    saveRotation = model.transform.localRotation.eulerAngles;
+                    saveVelocity = rb.velocity;
+
                     if (Input.GetKey(KeyCode.D)) {
                         sRight = true;
-                        saveRotation = transform.rotation.eulerAngles.x;
                         transform.Rotate(0.0f, 0.0f, 500.0f * Time.deltaTime);
-                        strafeTime = strafeConst;
                     }
                     if (Input.GetKey(KeyCode.A)) {
                         sLeft = true;
-                        saveRotation = transform.rotation.eulerAngles.x;
-                        transform.Rotate(0.0f, 0.0f, -5.0f * Time.deltaTime);
+                        transform.Rotate(0.0f, 0.0f, -500.0f * Time.deltaTime);
                     }
+                    /*
                     if (Input.GetKey(KeyCode.W)) {
                         sForward = true;
-                        saveRotation = transform.rotation.eulerAngles.z;
-                        transform.Rotate(5.0f * Time.deltaTime, 0.0f, 0.0f);
+                        transform.Rotate(500.0f, 0.0f, 0.0f * Time.deltaTime);
                     }
                     if (Input.GetKey(KeyCode.S)) {
                         sBack = true;
-                        saveRotation = transform.rotation.eulerAngles.z;
-                        transform.Rotate(-5.0f * Time.deltaTime, 0.0f, 0.0f);
+                        transform.Rotate(-500.0f, 0.0f, 0.0f * Time.deltaTime);
                     }
+                    */
                 }
             }
 
             if (sRight){
-                transform.Rotate(0.0f, 0.0f, 500.0f * Time.deltaTime);
-                camera.transform.Rotate(0.0f, 0.0f, -500.0f * Time.deltaTime);
+                model.transform.Rotate(0.0f, 0.0f, 500.0f * Time.deltaTime);
                 strafeTime -= Time.deltaTime;
-
                 if(strafeTime <= 0)
                 {
                     sRight = false;
+                    rb.velocity = saveVelocity;
+                    model.transform.localRotation = Quaternion.Euler(saveRotation);
                 }
+                rb.velocity = new Vector3(transform.right.x * 100, transform.right.y * 100, transform.right.z * 100);
             }
+
+            if (sLeft)
+            {
+                model.transform.Rotate(0.0f, 0.0f, -500.0f * Time.deltaTime);
+                strafeTime -= Time.deltaTime;
+                if (strafeTime <= 0)
+                {
+                    sLeft = false;
+                    rb.velocity = saveVelocity;
+                    model.transform.localRotation = Quaternion.Euler(saveRotation);
+                }
+                rb.velocity = new Vector3(transform.right.x * -100, transform.right.y * -100, transform.right.z * -100);
+            }
+
+            /*
+            if (sForward)
+            {
+                //model.transform.Rotate(0.0f, 0.0f, 500.0f * Time.deltaTime);
+                strafeTime -= Time.deltaTime;
+                if (strafeTime <= 0)
+                {
+                    sForward = false;
+                    rb.velocity = saveVelocity;
+                }
+                rb.velocity = new Vector3(transform.forward.x * 100, transform.forward.y * 100, transform.forward.z * 100);
+            }
+
+            if (sBack)
+            {
+                model.transform.Rotate(0.0f, 0.0f, -500.0f * Time.deltaTime);
+                strafeTime -= Time.deltaTime;
+                if (strafeTime <= 0)
+                {
+                    sBack = false;
+                    rb.velocity = saveVelocity;
+                }
+                rb.velocity = new Vector3(transform.forward.x * -100, transform.forward.y * -100, transform.forward.z * -100);
+            }
+            */
 
             //ANIMATION SECTION
 
@@ -226,8 +269,8 @@ public class NewMovement : MonoBehaviour
             leftFrontB.startSpeed = Mathf.Round(-vMouseCurrentx * 20);
 
             //ROLL
-            if (Input.GetAxisRaw("Horizontal") != 0) //Prevent rotations being altered by the leveling-out mechanic
-            {
+            //if (Input.GetAxisRaw("Horizontal") != 0) //Prevent rotations being altered by the leveling-out mechanic
+            //{
                 rightFront.transform.Rotate(0.0f, -vRollCurrent, 0.0f, Space.Self);
                 leftFront.transform.Rotate(0.0f, vRollCurrent, 0.0f, Space.Self);
                 rightBack.transform.Rotate(0.0f, -vRollCurrent, 0.0f, Space.Self);
@@ -241,9 +284,10 @@ public class NewMovement : MonoBehaviour
                 leftBackB.simulationSpeed = Mathf.Abs(vRollCurrent);
                 rightBackB.startSpeed = Mathf.Round(-vRollCurrent);
                 leftBackB.startSpeed = Mathf.Round(vRollCurrent);
-            }
-            else
-            {
+            //}
+            //else
+            //{
+                /*
                 rightFront.transform.Rotate(0.0f, vRollCurrent / 4, 0.0f, Space.Self);
                 leftFront.transform.Rotate(0.0f, -vRollCurrent / 4, 0.0f, Space.Self);
                 rightBack.transform.Rotate(0.0f, vRollCurrent / 4, 0.0f, Space.Self);
@@ -257,7 +301,8 @@ public class NewMovement : MonoBehaviour
                 leftBackB.simulationSpeed = Mathf.Abs(vMouseCurrenty * 20);
                 rightBackB.startSpeed = Mathf.Round(vMouseCurrenty * 20);
                 leftBackB.startSpeed = Mathf.Round(vMouseCurrenty * 20);
-            }
+                */
+            //}
         }
     }
 }

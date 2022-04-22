@@ -1460,7 +1460,7 @@ GameObject:
   - component: {fileID: 4664489893714115527}
   m_Layer: 0
   m_Name: newship1
-  m_TagString: Untagged
+  m_TagString: model
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1714,7 +1714,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d12b273e1ccf87142b7c43af86146559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manager: {fileID: 0}
   vForward: 20
   vRoll: 50
   lookRotateSpeed: 50
@@ -1723,6 +1722,13 @@ MonoBehaviour:
   vPitchCurrent: 0
   vMouseCurrentx: 0
   vMouseCurrenty: 0
+  upgrade: 1
+  strafeTime: 0
+  sForward: 0
+  sBack: 0
+  sLeft: 0
+  sRight: 0
+  model: {fileID: 5471953214058979709}
 --- !u!114 &1423402964108008563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1735,7 +1741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d27e15f30740574ea26b6a435d1b7b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bar: {fileID: 0}
+  HPtext: {fileID: 0}
 --- !u!1 &6120902966265033660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1761,13 +1767,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6120902966265033660}
-  m_LocalRotation: {x: 0.07839847, y: -0, z: -0, w: 0.99692214}
+  m_LocalRotation: {x: 0.078459114, y: 0, z: 0, w: 0.99691737}
   m_LocalPosition: {x: 0.059999466, y: 2.0500002, z: -4.33}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6120902966613092258}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 8.993, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 9, y: 0, z: 0}
 --- !u!20 &6120902966265033658
 Camera:
   m_ObjectHideFlags: 0
