@@ -7,15 +7,17 @@ using TMPro;
 
 public class playertakedamage : MonoBehaviour
 {
-    private int playerHealth = 100;
+    private int playerHealth = 300;
+    private int percentageHealth;
     public TextMeshProUGUI HPtext;
     private string Hpstring;
   //  public ProgressBar bar;
     //private int damage = 0;
     public void Update()
     {
+        percentageHealth = (playerHealth * 100) / 300;
         
-        HPtext.text = "Hull Integrity " + playerHealth.ToString() + "%";
+        HPtext.text = "Hull Integrity " + percentageHealth.ToString() + "%";
     }
     void OnCollisionEnter(Collision col)
     {
@@ -28,7 +30,7 @@ public class playertakedamage : MonoBehaviour
              if(playerHealth <= 0)
              {
                 Destroy(gameObject);
-                SceneManager.LoadScene(3);
+                SceneManager.LoadScene(5);
                // Debug.Log(playerhealth);
              }
         }
@@ -36,7 +38,7 @@ public class playertakedamage : MonoBehaviour
         {
             
                 Destroy(gameObject);
-                SceneManager.LoadScene(3);
+                SceneManager.LoadScene(5);
            
         }
         if (col.gameObject.tag == "Khnumian")
@@ -47,7 +49,7 @@ public class playertakedamage : MonoBehaviour
             if (playerHealth <= 0)
             {
                 Destroy(gameObject);
-                SceneManager.LoadScene(3);
+                SceneManager.LoadScene(5);
                
             }
         }

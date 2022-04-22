@@ -19,8 +19,9 @@ public class rockbreack : MonoBehaviour
         {
             Debug.Log("We hit the megabullet");
             cutsceneactivate();
-            
-          
+
+            //   cutsceneendtofinishscreen();
+
         }
 
     }
@@ -33,15 +34,28 @@ public class rockbreack : MonoBehaviour
         cutsceneship.SetActive(true);
         cinemachinevirtualcameras.SetActive(true);
         cinemachinemaincamera.SetActive(true);
+        loadNextScene();
 
-     //   cutsceneendtofinishscreen();
 
+
+
+    }
+    void loadNextScene()
+    {
+        Debug.Log("this is before yeild line in load scene");
+        StartCoroutine(cutsceneendtofinishscreen());
+        //cutsceneendtofinishscreen();
+        Debug.Log("this is after the call to enumerator");
     }
 
     IEnumerator cutsceneendtofinishscreen()
     {
-        yield return new WaitForSeconds(13);
+        Debug.Log("this is the enumerator");
+        yield return new WaitForSeconds(10);
+        Debug.Log("this is after the wait of 5 seconds");
+        SceneManager.LoadScene(4);
         //change scene to finish screen
+
     }
 
 

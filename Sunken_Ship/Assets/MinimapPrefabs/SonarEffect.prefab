@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7938305108213739801}
   - component: {fileID: 7938305108213739804}
   - component: {fileID: 7938305108213739807}
-  m_Layer: 10
+  m_Layer: 3
   m_Name: SonarEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}

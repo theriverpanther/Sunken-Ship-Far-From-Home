@@ -103,7 +103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3914885461280736156}
   - component: {fileID: 7451456055490397790}
-  m_Layer: 11
+  m_Layer: 3
   m_Name: minimapIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,3 +252,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onOff: {fileID: 5047510017963764754}
+  isOn: 0
+  isOnCooldown: 0

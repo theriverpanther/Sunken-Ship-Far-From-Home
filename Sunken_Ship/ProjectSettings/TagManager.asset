@@ -24,11 +24,12 @@ TagManager:
   - movementupgrade
   - rock
   - megabullet
+  - 8
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - minimap
   - Water
   - UI
   - 

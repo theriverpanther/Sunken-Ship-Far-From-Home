@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6885309179560530299}
   - component: {fileID: 6885309179560530297}
   - component: {fileID: 6885309179560530296}
-  m_Layer: 10
+  m_Layer: 3
   m_Name: PlayerMinimapIcon
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 6885309180198020184}
   - component: {fileID: 6885309180198020167}
   - component: {fileID: 6885309180198020166}
-  m_Layer: 10
+  m_Layer: 3
   m_Name: Arrow
   m_TagString: Player
   m_Icon: {fileID: 0}

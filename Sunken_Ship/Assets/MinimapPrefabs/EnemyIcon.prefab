@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4869559616121395730}
   - component: {fileID: 4869559616121395734}
   - component: {fileID: 4869559616121395735}
-  m_Layer: 10
+  m_Layer: 3
   m_Name: EnemyIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49,7 +49,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4869559616121395731}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
