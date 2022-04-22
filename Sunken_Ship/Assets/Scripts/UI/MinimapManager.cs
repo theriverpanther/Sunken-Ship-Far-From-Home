@@ -44,7 +44,7 @@ public class MinimapManager : MonoBehaviour
     [SerializeField]
     private GameObject sonarPrefab;
     #endregion
-
+    
     // The actual player object on the scene
     [SerializeField]
     private GameObject player;

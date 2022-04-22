@@ -21,7 +21,11 @@ TagManager:
   - torona
   - bullet
   - sentrybullet
+<<<<<<< Updated upstream
   - model
+=======
+  - weaponupgrade
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX

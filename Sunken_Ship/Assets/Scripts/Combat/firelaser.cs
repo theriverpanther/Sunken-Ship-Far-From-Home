@@ -8,6 +8,8 @@ public class firelaser : MonoBehaviour
     public float firerate;
     public GameObject laserprefab;
     public GameObject flarePrefab;
+    public GameObject megalaserprefab;
+    public bool abletoshoot_megalaser = false;
 
     public GameMenuManager manager;
 
@@ -48,6 +50,10 @@ public class firelaser : MonoBehaviour
                     useFlare = true;
                 }
             }
+            if(Input.GetMouseButtonDown(1) && Time.time > lastfire + firerate)// && abletoshoot_megalaser == true)
+            {
+                firemegalaser();
+            }
         }
     }
 
@@ -60,5 +66,9 @@ public class firelaser : MonoBehaviour
     void FireFlare()
     {
         GameObject flare = GameObject.Instantiate(flarePrefab, transform.position, transform.rotation) as GameObject;
+    }
+    void firemegalaser()
+    {
+        GameObject megalaser = GameObject.Instantiate(megalaserprefab, transform.position, transform.rotation) as GameObject;
     }
 }
