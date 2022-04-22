@@ -35,6 +35,7 @@ public class NewMovement : MonoBehaviour
     //Upgrade
     [SerializeField] bool upgrade = true;
     const float strafeConst = 0.7125f;
+    const float rollVelocity = 50f;
     [SerializeField] float strafeTime;
     [SerializeField] bool sForward = false;
     [SerializeField] bool sBack = false;
@@ -200,7 +201,7 @@ public class NewMovement : MonoBehaviour
                     rb.velocity = saveVelocity;
                     model.transform.localRotation = Quaternion.Euler(saveRotation);
                 }
-                rb.velocity = new Vector3(transform.right.x * 100, transform.right.y * 100, transform.right.z * 100);
+                rb.velocity = new Vector3(transform.right.x * rollVelocity, transform.right.y * rollVelocity, transform.right.z * rollVelocity);
             }
 
             if (sLeft)
@@ -213,7 +214,7 @@ public class NewMovement : MonoBehaviour
                     rb.velocity = saveVelocity;
                     model.transform.localRotation = Quaternion.Euler(saveRotation);
                 }
-                rb.velocity = new Vector3(transform.right.x * -100, transform.right.y * -100, transform.right.z * -100);
+                rb.velocity = new Vector3(transform.right.x * -rollVelocity, transform.right.y * -rollVelocity, transform.right.z * -rollVelocity);
             }
 
             /*
