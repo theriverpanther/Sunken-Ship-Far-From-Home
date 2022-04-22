@@ -4,28 +4,26 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Expendable
-  - 1
-  - 2
-  - 3
-  - 4
-  - 5
+  - model
+  - bullet
+  - weaponupgrade
+  - Khnumian
+  - torona
+  - turret
+  - sentrybullet
   - 6
-  - 7
-  - 8
+  - 4
+  - 3
+  - 5
   - 9
+  - 1
+  - 7
   - 10
   - 11
-  - Khnumian
-  - turret
-  - torona
-  - bullet
-  - sentrybullet
-<<<<<<< Updated upstream
-  - model
-=======
-  - weaponupgrade
->>>>>>> Stashed changes
+  - 2
+  - movementupgrade
+  - rock
+  - megabullet
   layers:
   - Default
   - TransparentFX
@@ -36,10 +34,10 @@ TagManager:
   - 
   - 
   - 
-  - Post Processing
-  - Minimap
-  - MapKnight
-  - Terrain
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 

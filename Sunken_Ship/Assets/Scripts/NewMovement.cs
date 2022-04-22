@@ -33,7 +33,7 @@ public class NewMovement : MonoBehaviour
     Rigidbody rb;
 
     //Upgrade
-    [SerializeField] bool upgrade = true;
+    [SerializeField] public bool upgrade = false;
     const float strafeConst = 0.7125f;
     const float rollVelocity = 50f;
     [SerializeField] float strafeTime;

@@ -50,7 +50,7 @@ public class firelaser : MonoBehaviour
                     useFlare = true;
                 }
             }
-            if(Input.GetMouseButtonDown(1) && Time.time > lastfire + firerate)// && abletoshoot_megalaser == true)
+            if(Input.GetMouseButtonDown(1) && Time.time > lastfire + firerate && abletoshoot_megalaser == true)
             {
                 firemegalaser();
             }

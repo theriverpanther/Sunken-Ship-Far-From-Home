@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class gatheritem : MonoBehaviour
 {
-    firelaser f = new firelaser();
+    firelaser f;
+    NewMovement n;
   
     void OnCollisionEnter(Collision col)
     {
@@ -13,20 +14,23 @@ public class gatheritem : MonoBehaviour
             Debug.Log("We hit weapon");
             f.abletoshoot_megalaser = true;
            Destroy(col.gameObject);
-           // col.gameObject.SetActive(false);
+          
         }
 
-        /*if (col.gameObject.tag == "movementupgrade")
+        if (col.gameObject.tag == "movementupgrade")
         {
-            // do the movement upgrade here
-           // Destroy(col.gameObject);
-        }*/
+            Debug.Log("We hit movementupgrade");
+            n.upgrade = true;
+            Destroy(col.gameObject);
+            
+        }
    
     }
     // Start is called before the first frame update
     void Start()
     {
-        
+        f = FindObjectOfType<firelaser>();
+        n = FindObjectOfType<NewMovement>();
     }
 
     // Update is called once per frame
